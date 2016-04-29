@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="1024.0px" android:layout_height="600.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/page1Back" android:background="@drawable/background" android:layout_width="1024.0px" android:layout_height="600.0px" />
+    <FrameLayout android:id="@id/main" android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="70.0px" android:layout_marginTop="107.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/media" android:background="@drawable/btn_media" android:paddingTop="100.0px" android:nextFocusLeft="@id/setting" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/media" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="304.0px" android:layout_marginTop="107.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/blutooth" android:background="@drawable/btn_blutooth" android:paddingTop="100.0px" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/blutooth" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="538.0px" android:layout_marginTop="107.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/navi" android:background="@drawable/btn_navi" android:paddingTop="100.0px" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/navi" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="773.0px" android:layout_marginTop="107.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/radio" android:background="@drawable/btn_radio" android:paddingTop="100.0px" android:nextFocusRight="@id/interconnect" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/radio" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/main2" android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="70.0px" android:layout_marginTop="337.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/interconnect" android:background="@drawable/btn_interconnect" android:paddingTop="100.0px" android:nextFocusLeft="@id/radio" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/interconnect" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="304.0px" android:layout_marginTop="337.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/voice" android:background="@drawable/btn_voice" android:paddingTop="100.0px" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/voice" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="538.0px" android:layout_marginTop="337.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/other" android:background="@drawable/btn_aplication" android:paddingTop="100.0px" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/aplication" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="773.0px" android:layout_marginTop="337.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/setting" android:background="@drawable/btn_setting" android:paddingTop="100.0px" android:nextFocusRight="@id/media" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/setting" />
+    </FrameLayout>
+</FrameLayout>

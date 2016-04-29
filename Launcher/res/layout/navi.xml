@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="1024.0px" android:layout_height="600.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/page1Back" android:layout_width="1024.0px" android:layout_height="600.0px" android:layout_marginTop="0.0px" />
+    <GridView android:gravity="center" android:id="@id/gv_apps" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="1.0px" android:layout_marginTop="80.0px" android:horizontalSpacing="-80.0px" android:verticalSpacing="35.0px" android:stretchMode="columnWidth" android:numColumns="4" />
+    <LinearLayout android:id="@id/display_all_apps" android:background="@drawable/background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.9">
+        <GridView android:gravity="center" android:id="@id/gv_all_apps" android:background="@drawable/line" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0px" android:layout_marginTop="35.0px" android:layout_marginRight="10.0px" android:layout_marginBottom="35.0px" android:horizontalSpacing="20.0px" android:verticalSpacing="20.0px" android:numColumns="6" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/top_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="34.0px">
+        <TextView android:gravity="center" android:id="@id/tips" android:background="@drawable/tip_bg" android:layout_width="400.0px" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        <TextView android:textColor="#ff000000" android:gravity="center" android:id="@id/exit_edit" android:background="@drawable/btn_navi_exit_edit" android:clickable="true" android:layout_width="100.0px" android:layout_height="fill_parent" android:layout_marginTop="2.0px" android:layout_marginRight="2.0px" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

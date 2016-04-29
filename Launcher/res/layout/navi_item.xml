@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/apk_icon" android:background="@drawable/icon_bg" android:paddingLeft="2.0px" android:paddingRight="2.0px" android:layout_width="65.0px" android:layout_height="65.0px" android:scaleType="fitCenter" />
+    <TextView android:textSize="10.0sp" android:textStyle="bold" android:ellipsize="marquee" android:gravity="center" android:id="@id/apk_name" android:layout_width="fill_parent" android:layout_height="20.0px" android:maxLines="1" android:marqueeRepeatLimit="marquee_forever" />
+</LinearLayout>

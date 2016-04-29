@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#ff000000" android:layout_width="1024.0px" android:layout_height="600.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/video_warning" android:layout_width="1024.0px" android:layout_height="410.0px" android:layout_marginTop="0.0px" />
+    <TextView android:textSize="30.0px" android:textColor="#ffffffff" android:gravity="left" android:layout_width="1024.0px" android:layout_height="45.0px" android:layout_marginLeft="469.0px" android:layout_marginTop="179.0px" android:text="@string/warn" />
+    <TextView android:textSize="24.0px" android:textColor="#ffffffff" android:gravity="left" android:layout_width="1024.0px" android:layout_height="30.0px" android:layout_marginLeft="410.0px" android:layout_marginTop="288.0px" android:text="@string/warn_detail1" />
+    <TextView android:textSize="24.0px" android:textColor="#ffffffff" android:gravity="center" android:layout_width="1024.0px" android:layout_height="30.0px" android:layout_marginTop="327.0px" android:text="@string/warn_detail2" />
+    <ImageView android:background="@drawable/a2dp_end_bj" android:layout_width="1024.0px" android:layout_height="110.0px" android:layout_marginTop="410.0px" />
+    <Button android:textSize="22.0px" android:textColor="#ffffffff" android:id="@id/agree" android:background="@drawable/btn_warn_agree" android:paddingTop="68.0px" android:layout_width="512.0px" android:layout_height="110.0px" android:layout_marginLeft="0.0px" android:layout_marginTop="410.0px" android:text="@string/agree" android:onClick="onClick" />
+    <Button android:textSize="22.0px" android:textColor="#ffffffff" android:id="@id/cancle_warn" android:background="@drawable/btn_warn_cancel" android:paddingTop="68.0px" android:layout_width="512.0px" android:layout_height="110.0px" android:layout_marginLeft="512.0px" android:layout_marginTop="410.0px" android:text="@string/cancel" android:onClick="onClick" />
+</FrameLayout>

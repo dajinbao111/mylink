@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="1024.0px" android:layout_height="600.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/page1Back" android:background="@drawable/background" android:layout_width="1024.0px" android:layout_height="600.0px" />
+    <FrameLayout android:id="@id/main" android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="70.0px" android:layout_marginTop="107.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/music" android:background="@drawable/btn_music" android:paddingTop="100.0px" android:nextFocusLeft="@id/record" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/music" android:onClick="onClick" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="304.0px" android:layout_marginTop="107.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/video" android:background="@drawable/btn_video" android:paddingTop="100.0px" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/vedio" android:onClick="onClick" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="538.0px" android:layout_marginTop="107.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/image" android:background="@drawable/btn_image" android:paddingTop="100.0px" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/image" android:onClick="onClick" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="773.0px" android:layout_marginTop="107.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/bmusic" android:background="@drawable/btn_blutooth_music" android:paddingTop="100.0px" android:nextFocusRight="@id/auxin" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/bmusic" android:onClick="onClick" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/main2" android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="70.0px" android:layout_marginTop="337.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/auxin" android:background="@drawable/btn_auxin" android:paddingTop="100.0px" android:nextFocusLeft="@id/bmusic" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/auxin" android:onClick="onClick" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/main2" android:layout_width="182.0px" android:layout_height="186.0px" android:layout_marginLeft="304.0px" android:layout_marginTop="337.0px">
+        <Button android:textSize="24.0px" android:textColor="@drawable/btn_textcolor" android:id="@id/record" android:background="@drawable/btn_media_record" android:paddingTop="100.0px" android:nextFocusRight="@id/music" android:layout_width="182.0px" android:layout_height="186.0px" android:scaleType="matrix" android:text="@string/driving_record" android:onClick="onClick" />
+    </FrameLayout>
+</FrameLayout>

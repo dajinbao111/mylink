@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="other_app">
+        <item>cn.com.pathbook.mychevy/cn.com.pathbook.mychevy.SplashActivity/btn_chcvy</item>
+        <item>com.vcyber.gmcarhk/com.vcyber.gmcarhk.activity.WelcomeActivity/btn_car_butler</item>
+        <item>com.vcyber.gmonline/com.vcyber.gmonline.WelcomeActivity/btn_listener</item>
+        <item>com.vcyber.gmcontacts/com.vcyber.gmcontacts.Welcome/btn_friends</item>
+        <item>cn.com.pathbook.carassist/cn.com.pathbook.carassist.SplashActivity/btn_car_assit</item>
+    </string-array>
+    <string-array name="video_app">
+        <item>com.yf.music/com.yf.musiclist.MusiclistActivity/btn_music</item>
+        <item>com.yf.video/com.yf.video.MainActivity/btn_video</item>
+        <item>com.yf.image/com.yf.image.MainActivity/btn_image</item>
+        <item>com.yf.yfblutoothmusic/com.yf.yfblutoothmusic.MainActivity/btn_blutooth_music</item>
+        <item>com.yf.audioin/com.yf.audioin.MainActivity/btn_auxin</item>
+    </string-array>
+</resources>

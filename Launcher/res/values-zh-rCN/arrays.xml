@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="backgroud">
+        <item>黑暗幽灵</item>
+        <item>聚光灯</item>
+        <item>绚丽</item>
+        <item>炫光1</item>
+        <item>炫光2</item>
+        <item>凌镜</item>
+        <item>怀旧</item>
+    </string-array>
+</resources>

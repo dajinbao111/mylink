@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yf.bar.Clock android:textSize="32.0px" android:textColor="#ff29aede" android:gravity="center|left" android:id="@id/clock" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="50.0px" android:singleLine="true" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/wifi_state" android:layout_width="32.0px" android:layout_height="26.0px" android:layout_marginLeft="550.0px" android:src="@drawable/wifi_state" />
+    <ImageView android:layout_gravity="center|right" android:id="@id/battery" android:paddingLeft="4.0dip" android:layout_width="40.0px" android:layout_height="25.0px" android:layout_marginLeft="30.0px" />
+</LinearLayout>
