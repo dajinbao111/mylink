@@ -798,7 +798,7 @@
     .line 263
     const-string v9, "volume"
 
-    const/16 v11, 0x4
+    const/16 v11, 0x8
 
     invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
