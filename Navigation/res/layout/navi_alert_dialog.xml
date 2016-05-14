@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/dialog_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/button_positive" android:background="@drawable/bg_navi_alert_dialog_left_button" android:focusable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/icon_positive" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerInside" android:layout_weight="1.0" />
+        <TextView android:textSize="30.0sp" android:gravity="center_horizontal" android:id="@id/text_positive" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" />
+    </LinearLayout>
+    <ImageView android:background="@drawable/button_separator" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/button_negative" android:background="@drawable/bg_navi_alert_dialog_right_button" android:focusable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/icon_negative" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerInside" android:layout_weight="1.0" />
+        <TextView android:textSize="30.0sp" android:gravity="center_horizontal" android:id="@id/text_negative" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="2" />
+    </LinearLayout>
+</LinearLayout>

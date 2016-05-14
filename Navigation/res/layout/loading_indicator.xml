@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="0.0dip" android:layout_height="320.0dip" android:layout_weight="1.0" />
+    <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_loading_data" />
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

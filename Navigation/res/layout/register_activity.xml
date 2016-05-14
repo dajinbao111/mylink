@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_device_id" />
+                <TextView android:id="@id/text_device_id" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_soft_version" />
+                <TextView android:id="@id/text_soft_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_map_version" />
+                <TextView android:id="@id/text_map_version" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TableLayout android:id="@id/input_table" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:stretchColumns="\ 1">
+                <TableRow android:paddingTop="5.0dip" android:paddingBottom="5.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_serial_number" />
+                    <EditText android:typeface="monospace" android:id="@id/serial_number" android:paddingLeft="10.0dip" android:nextFocusDown="@id/install_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_serial_num" android:singleLine="true" android:maxLength="@integer/config_max_length_reg_code" android:imeOptions="actionNext" />
+                </TableRow>
+                <TableRow android:paddingTop="5.0dip" android:paddingBottom="5.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_install_code" />
+                    <EditText android:typeface="monospace" android:id="@id/install_code" android:paddingLeft="10.0dip" android:focusable="false" android:nextFocusDown="@id/active_code" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_install_code" android:singleLine="true" android:maxLength="@integer/config_max_length_reg_code" android:inputType="none" android:imeOptions="actionNext" />
+                </TableRow>
+                <TableRow android:paddingTop="5.0dip" android:paddingBottom="5.0dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_active_code" />
+                    <EditText android:typeface="monospace" android:id="@id/active_code" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_active_code" android:singleLine="true" android:maxLength="@integer/config_max_length_reg_code" android:imeOptions="actionDone" android:imeActionLabel="@string/register" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:paddingLeft="15.0dip" android:paddingTop="8.0dip" android:paddingRight="15.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/register" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/register" android:singleLine="true" android:layout_weight="1.0" android:onClick="onRegister" />
+        <Button android:id="@id/cancel" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip" android:text="@string/cancel" android:singleLine="true" android:layout_weight="1.0" android:onClick="onCancel" />
+    </LinearLayout>
+</LinearLayout>

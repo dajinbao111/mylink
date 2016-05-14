@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <TtsRole id="1" name="@string/tts_role_xiaoyan" languages="zh" />
+    <TtsRole id="0" name="@string/tts_role_xiaofeng" languages="zh,en" />
+    <TtsRole id="3" name="@string/tts_role_xiaomei" languages="zh" />
+    <TtsRole id="5" name="@string/tts_role_xiaoqian" languages="zh" />
+    <TtsRole id="7" name="@string/tts_role_xiaorong" languages="zh" />
+    <TtsRole id="9" name="@string/tts_role_xiaolin" languages="zh" />
+</resources>

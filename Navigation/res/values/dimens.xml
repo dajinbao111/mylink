@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_margin">10.0dip</dimen>
+    <dimen name="widget_margin">4.0dip</dimen>
+    <dimen name="style_text_size_large">19.0sp</dimen>
+    <dimen name="style_text_size_medium">16.0sp</dimen>
+    <dimen name="style_text_size_small">14.0sp</dimen>
+    <dimen name="alert_dialog_title_height">38.0dip</dimen>
+    <dimen name="alert_dialog_button_bar_height">38.0dip</dimen>
+    <dimen name="style_text_size_micro">12.0sp</dimen>
+    <dimen name="gap_edge">3.0dip</dimen>
+    <dimen name="gap_view_normal">5.0dip</dimen>
+    <dimen name="gap_view_small">3.0dip</dimen>
+    <dimen name="gap_group">5.0dip</dimen>
+    <dimen name="content_padding_left">13.0dip</dimen>
+    <dimen name="gap_detail_of_route_bar">10.0dip</dimen>
+    <item type="dimen" name="setting_alert_dialog_width">65.0%</item>
+</resources>

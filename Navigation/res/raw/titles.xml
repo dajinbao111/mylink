@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<titles>
+    <title
+        component="com.autonavi.xm.navigation.GpsInfo"
+        icon="ic_title_gps_info"
+        text="title_gps_info" />
+    <title
+        component="com.autonavi.xm.navigation.VersionInfo"
+        icon="ic_title_version_info"
+        text="title_version_info" />
+    <title
+        component="com.autonavi.xm.navigation.AreaPicker"
+        icon="ic_title_area_picker"
+        text="title_area_picker" />
+    <title
+        component="com.autonavi.xm.navigation.Common"
+        icon="ic_title_common"
+        text="title_common" />
+    <title
+        component="com.autonavi.xm.navigation.FavoriteEditor"
+        icon="ic_title_favorite_editor"
+        text="title_favorite_editor" />
+    <title
+        component="com.autonavi.xm.navigation.MainMenu"
+        icon="ic_title_main_menu"
+        text="title_main_menu" />
+    <title
+        component="com.autonavi.xm.navigation.PoiBrowser"
+        icon="ic_title_poi_browser"
+        text="title_poi_browser" />
+    <title
+        component="com.autonavi.xm.navigation.RouteEditor"
+        icon="ic_title_route_editor"
+        text="title_route_editor" />
+    <title
+        component="com.autonavi.xm.navigation.RouteOverview"
+        icon="ic_title_route_overview"
+        text="title_route_overview" />
+    <title
+        component="com.autonavi.xm.navigation.Warning"
+        icon="ic_title_warning"
+        text="title_warning" />
+    <title
+        component="com.autonavi.xm.navigation.DetailOfRoute"
+        icon="ic_title_detail_of_route"
+        text="title_detail_of_route" />
+    <title
+        component="com.autonavi.xm.navigation.SearchResult"
+        icon="ic_title_search_result"
+        text="title_search_result" />
+    <title
+        component="com.autonavi.xm.navigation.AroundSearcher"
+        icon="ic_title_around_searcher"
+        text="title_around_searcher" />
+    <title
+        component="com.autonavi.xm.navigation.FieldEditor"
+        icon="ic_title_favorite_editor" />
+    <title
+        component="com.autonavi.xm.navigation.DetailOfTurning"
+        icon="ic_title_detail_of_turning"
+        text="title_detail_of_turning" />
+</titles>

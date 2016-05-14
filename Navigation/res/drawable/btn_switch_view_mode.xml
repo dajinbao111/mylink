@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/btn_switch_view_mode_north" android:maxLevel="0" />
+    <item android:drawable="@drawable/btn_switch_view_mode_driver" android:maxLevel="1" />
+    <item android:drawable="@drawable/btn_switch_view_mode_3d" android:maxLevel="2" />
+</level-list>

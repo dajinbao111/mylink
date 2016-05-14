@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/operation_bar_normal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:splitMotionEvents="false">
+        <Button android:id="@id/searchPoi" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/search" android:singleLine="true" android:drawableLeft="@drawable/ic_search" android:layout_weight="1.0" android:nextFocusForward="@id/showShortcut" style="@style/Widget.Button.Bottom" />
+        <Button android:id="@id/showShortcut" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/shortcut" android:singleLine="true" android:drawableLeft="@drawable/ic_shortcut" android:layout_weight="1.0" android:nextFocusForward="@id/searchAround" style="@style/Widget.Button.Bottom" />
+        <Button android:id="@id/searchAround" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/search_around" android:singleLine="true" android:drawableLeft="@drawable/ic_search_around" android:layout_weight="1.0" android:nextFocusForward="@id/showMenu" style="@style/Widget.Button.Bottom" />
+        <Button android:id="@id/showMenu" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/menu" android:singleLine="true" android:drawableLeft="@drawable/ic_menu" android:layout_weight="1.0" style="@style/Widget.Button.Bottom" />
+    </LinearLayout>
+    <ImageButton android:id="@id/operation_bar_normal_minimize" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="1.0dip" android:src="@drawable/ic_minimize" android:layout_weight="0.05" />
+</LinearLayout>

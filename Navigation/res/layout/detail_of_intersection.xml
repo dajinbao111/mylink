@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/parentLayout" android:background="@android:color/transparent" android:padding="@dimen/gap_group" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/operation_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:id="@id/pre_intersection" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/gap_edge" android:layout_alignParentLeft="true" style="@style/Widget.Button.Operation">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/pre_intersection" android:singleLine="true" android:drawableLeft="@drawable/ic_pre_intersection" android:drawablePadding="5.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/next_intersection" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/gap_edge" android:layout_centerHorizontal="true" style="@style/Widget.Button.Operation">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/next_intersection" android:singleLine="true" android:drawableLeft="@drawable/ic_next_intersection" android:drawablePadding="5.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/avoid" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/gap_edge" android:layout_alignParentRight="true" style="@style/Widget.Button.Operation">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_gravity="center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/avoid" android:singleLine="true" android:drawableLeft="@drawable/ic_avoid" android:drawablePadding="5.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/gap_edge" android:layout_above="@id/operation_bar" android:layout_alignLeft="@id/operation_bar">
+        <LinearLayout android:orientation="vertical" android:id="@id/intersection_detail" android:background="@drawable/bg_turning_info" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/turning_icon" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/ic_turning_40" android:scaleType="centerInside" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/intersection_distance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/remaining_distance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/pre_road_info" android:background="@drawable/bg_turning_info" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gap_edge" android:layout_below="@id/intersection_detail" android:layout_alignLeft="@id/intersection_detail" android:layout_alignRight="@id/intersection_detail">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_pre_road" android:singleLine="true" />
+            <ImageView android:background="#ff646464" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="center_horizontal" android:id="@id/pre_road" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_turning_info" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingRight="5.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/gap_edge" android:layout_below="@id/pre_road_info" android:layout_alignLeft="@id/intersection_detail" android:layout_alignRight="@id/intersection_detail">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_next_road" android:singleLine="true" />
+            <ImageView android:background="#ff646464" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:layout_gravity="center_horizontal" android:id="@id/next_road" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

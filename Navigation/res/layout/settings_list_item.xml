@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/list_selector_background" android:paddingLeft="@dimen/content_padding_left" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/setting_key" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextView.SettingItemPrimary" />
+    <TextView android:id="@id/setting_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextView.SettingItemSecondary" />
+</LinearLayout>

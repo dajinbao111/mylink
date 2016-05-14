@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/row_upon" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/cate_default" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/label_default" android:drawableTop="@drawable/ic_popup_default" android:layout_weight="1.0" style="@style/Widget.Button.FavCate" />
+        <Button android:id="@id/cate_friend" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/label_friend" android:drawableTop="@drawable/ic_popup_friend" android:layout_weight="1.0" style="@style/Widget.Button.FavCate" />
+        <Button android:id="@id/cate_catering" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/label_catering" android:drawableTop="@drawable/ic_popup_catering" android:layout_weight="1.0" style="@style/Widget.Button.FavCate" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/row_upon">
+        <Button android:id="@id/cate_leisure" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/label_leisure" android:drawableTop="@drawable/ic_popup_leisure" android:layout_weight="1.0" style="@style/Widget.Button.FavCate" />
+        <Button android:id="@id/cate_work" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/label_work" android:drawableTop="@drawable/ic_popup_work" android:layout_weight="1.0" style="@style/Widget.Button.FavCate" />
+        <Button android:id="@id/cate_shopping" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/label_shopping" android:drawableTop="@drawable/ic_popup_shopping" android:layout_weight="1.0" style="@style/Widget.Button.FavCate" />
+    </LinearLayout>
+</RelativeLayout>

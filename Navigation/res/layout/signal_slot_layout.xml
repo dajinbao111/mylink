@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center" android:id="@id/slot_snr_txt" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" />
+    <View android:id="@id/slot_snr_level" android:background="@drawable/bg_signal_slot" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+</merge>
