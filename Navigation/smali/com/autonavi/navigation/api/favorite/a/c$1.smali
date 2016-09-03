@@ -14,7 +14,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    invoke-static {}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->values()[Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    invoke-static {}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->values()[Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
     move-result-object v0
 
@@ -27,9 +27,9 @@
     :try_start_0
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->c:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_COMPANY:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_COMPANY:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->ordinal()I
 
     move-result v1
 
@@ -43,9 +43,9 @@
     :try_start_1
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->c:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_CUSTOMER:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_CUSTOMER:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->ordinal()I
 
     move-result v1
 
@@ -59,9 +59,9 @@
     :try_start_2
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->c:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_DINING:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_DINING:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->ordinal()I
 
     move-result v1
 
@@ -75,9 +75,9 @@
     :try_start_3
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->c:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_ENTERTAINMENT:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_ENTERTAINMENT:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->ordinal()I
 
     move-result v1
 
@@ -91,9 +91,9 @@
     :try_start_4
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->c:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_FRIEND:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_FRIEND:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->ordinal()I
 
     move-result v1
 
@@ -107,9 +107,9 @@
     :try_start_5
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->c:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_HISTORY:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_HISTORY:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->ordinal()I
 
     move-result v1
 
@@ -123,9 +123,9 @@
     :try_start_6
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->c:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_HOME:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_HOME:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->ordinal()I
 
     move-result v1
 
@@ -139,9 +139,9 @@
     :try_start_7
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->c:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_LEISURE:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_LEISURE:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->ordinal()I
 
     move-result v1
 
@@ -155,9 +155,9 @@
     :try_start_8
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->c:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_SHOPPING:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_SHOPPING:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->ordinal()I
 
     move-result v1
 
@@ -171,9 +171,9 @@
     :try_start_9
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->c:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_SIGHT:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_SIGHT:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->ordinal()I
 
     move-result v1
 
@@ -187,9 +187,9 @@
     :try_start_a
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->c:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_WORK:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->GFAVORITE_ICON_WORK:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->ordinal()I
 
     move-result v1
 
@@ -200,7 +200,7 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_e
 
     :goto_a
-    invoke-static {}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->values()[Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    invoke-static {}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->values()[Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
     move-result-object v0
 
@@ -213,9 +213,9 @@
     :try_start_b
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->b:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_HISTORY:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_HISTORY:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->ordinal()I
 
     move-result v1
 
@@ -229,9 +229,9 @@
     :try_start_c
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->b:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_ENTERTAINMENT:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_ENTERTAINMENT:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->ordinal()I
 
     move-result v1
 
@@ -245,9 +245,9 @@
     :try_start_d
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->b:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_CUSTOMER:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_CUSTOMER:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->ordinal()I
 
     move-result v1
 
@@ -261,9 +261,9 @@
     :try_start_e
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->b:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_SIGHT:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_SIGHT:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->ordinal()I
 
     move-result v1
 
@@ -277,9 +277,9 @@
     :try_start_f
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->b:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_FRIEND:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_FRIEND:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->ordinal()I
 
     move-result v1
 
@@ -293,9 +293,9 @@
     :try_start_10
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->b:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_COMPANY:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_COMPANY:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->ordinal()I
 
     move-result v1
 
@@ -309,9 +309,9 @@
     :try_start_11
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->b:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_HOME:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_HOME:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->ordinal()I
 
     move-result v1
 

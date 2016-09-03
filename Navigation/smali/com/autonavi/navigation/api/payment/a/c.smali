@@ -2,11 +2,11 @@
 .super Lcom/autonavi/navigation/api/payment/a/a;
 
 # interfaces
-.implements Lcom/autonavi/xm/navigation/engine/h$a;
+.implements Lcom/autonavi/wh/navigation/engine/h$a;
 
 
 # instance fields
-.field private final a:Lcom/autonavi/xm/navigation/engine/h;
+.field private final a:Lcom/autonavi/wh/navigation/engine/h;
 
 .field private b:Lcom/autonavi/navigation/api/payment/a$b;
 
@@ -21,15 +21,15 @@
 
     invoke-direct {p0}, Lcom/autonavi/navigation/api/payment/a/a;-><init>()V
 
-    invoke-static {}, Lcom/autonavi/xm/navigation/engine/h;->a()Lcom/autonavi/xm/navigation/engine/h;
+    invoke-static {}, Lcom/autonavi/wh/navigation/engine/h;->a()Lcom/autonavi/wh/navigation/engine/h;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/autonavi/navigation/api/payment/a/c;->a:Lcom/autonavi/xm/navigation/engine/h;
+    iput-object v0, p0, Lcom/autonavi/navigation/api/payment/a/c;->a:Lcom/autonavi/wh/navigation/engine/h;
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/payment/a/c;->a:Lcom/autonavi/xm/navigation/engine/h;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/payment/a/c;->a:Lcom/autonavi/wh/navigation/engine/h;
 
-    invoke-virtual {v0, p0}, Lcom/autonavi/xm/navigation/engine/h;->a(Lcom/autonavi/xm/navigation/engine/h$a;)V
+    invoke-virtual {v0, p0}, Lcom/autonavi/wh/navigation/engine/h;->a(Lcom/autonavi/wh/navigation/engine/h$a;)V
 
     return-void
 .end method

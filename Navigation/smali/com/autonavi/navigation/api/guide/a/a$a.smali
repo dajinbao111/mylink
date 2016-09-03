@@ -3,5 +3,5 @@
 
 
 # virtual methods
-.method public abstract a(ILcom/autonavi/xm/navigation/server/GStatus;[Lcom/autonavi/xm/navigation/server/guide/GHGuideRoute;)V
+.method public abstract a(ILcom/autonavi/wh/navigation/server/GStatus;[Lcom/autonavi/wh/navigation/server/guide/GHGuideRoute;)V
 .end method

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private final a:Lcom/autonavi/xm/navigation/engine/a;
+.field private final a:Lcom/autonavi/wh/navigation/engine/a;
 
-.field private final b:Lcom/autonavi/xm/navigation/engine/GDBL_Guide;
+.field private final b:Lcom/autonavi/wh/navigation/engine/GDBL_Guide;
 
-.field private final c:Lcom/autonavi/xm/navigation/engine/g;
+.field private final c:Lcom/autonavi/wh/navigation/engine/g;
 
 .field private d:Lcom/autonavi/navigation/api/guide/GuideManager$OnGuideListener;
 
@@ -36,23 +36,23 @@
 
     iput-boolean v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->e:Z
 
-    invoke-static {}, Lcom/autonavi/xm/navigation/engine/GDBL_Guide;->a()Lcom/autonavi/xm/navigation/engine/GDBL_Guide;
+    invoke-static {}, Lcom/autonavi/wh/navigation/engine/GDBL_Guide;->a()Lcom/autonavi/wh/navigation/engine/GDBL_Guide;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/xm/navigation/engine/GDBL_Guide;
+    iput-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/wh/navigation/engine/GDBL_Guide;
 
-    invoke-static {}, Lcom/autonavi/xm/navigation/engine/a;->a()Lcom/autonavi/xm/navigation/engine/a;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->a:Lcom/autonavi/xm/navigation/engine/a;
-
-    invoke-static {}, Lcom/autonavi/xm/navigation/engine/g;->a()Lcom/autonavi/xm/navigation/engine/g;
+    invoke-static {}, Lcom/autonavi/wh/navigation/engine/a;->a()Lcom/autonavi/wh/navigation/engine/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->c:Lcom/autonavi/xm/navigation/engine/g;
+    iput-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->a:Lcom/autonavi/wh/navigation/engine/a;
+
+    invoke-static {}, Lcom/autonavi/wh/navigation/engine/g;->a()Lcom/autonavi/wh/navigation/engine/g;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->c:Lcom/autonavi/wh/navigation/engine/g;
 
     invoke-static {}, Lcom/autonavi/navigation/api/internal/a/c;->a()Lcom/autonavi/navigation/api/internal/a/b;
 
@@ -188,9 +188,9 @@
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/xm/navigation/engine/GDBL_Guide;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/wh/navigation/engine/GDBL_Guide;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/engine/GDBL_Guide;->l()Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/engine/GDBL_Guide;->l()Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
@@ -213,7 +213,7 @@
 
     invoke-virtual {v2, v0}, Lcom/autonavi/navigation/api/guide/a/f$a;->removeMessages(I)V
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v2, :cond_1
 
@@ -253,9 +253,9 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/xm/navigation/engine/GDBL_Guide;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/wh/navigation/engine/GDBL_Guide;
 
-    invoke-static {v0}, Lcom/autonavi/navigation/api/guide/a/b;->a(Lcom/autonavi/xm/navigation/engine/GDBL_Guide;)Lcom/autonavi/navigation/api/guide/model/GuideInfo;
+    invoke-static {v0}, Lcom/autonavi/navigation/api/guide/a/b;->a(Lcom/autonavi/wh/navigation/engine/GDBL_Guide;)Lcom/autonavi/navigation/api/guide/model/GuideInfo;
 
     move-result-object v0
 
@@ -267,21 +267,21 @@
 
     const/4 v1, 0x1
 
-    new-array v1, v1, [Lcom/autonavi/xm/navigation/server/map/GZoomViewInfo;
+    new-array v1, v1, [Lcom/autonavi/wh/navigation/server/map/GZoomViewInfo;
 
-    iget-object v2, p0, Lcom/autonavi/navigation/api/guide/a/f;->c:Lcom/autonavi/xm/navigation/engine/g;
+    iget-object v2, p0, Lcom/autonavi/navigation/api/guide/a/f;->c:Lcom/autonavi/wh/navigation/engine/g;
 
-    invoke-virtual {v2, v1}, Lcom/autonavi/xm/navigation/engine/g;->a([Lcom/autonavi/xm/navigation/server/map/GZoomViewInfo;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v2, v1}, Lcom/autonavi/wh/navigation/engine/g;->a([Lcom/autonavi/wh/navigation/server/map/GZoomViewInfo;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v2
 
-    sget-object v3, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v3, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v2, v3, :cond_2
 
     aget-object v1, v1, v4
 
-    iget v1, v1, Lcom/autonavi/xm/navigation/server/map/GZoomViewInfo;->nNextDis:I
+    iget v1, v1, Lcom/autonavi/wh/navigation/server/map/GZoomViewInfo;->nNextDis:I
 
     iput v1, v0, Lcom/autonavi/navigation/api/guide/model/GuideInfo;->nextDistance:I
 
@@ -302,15 +302,15 @@
 
     if-eqz v1, :cond_3
 
-    iget-object v2, p0, Lcom/autonavi/navigation/api/guide/a/f;->c:Lcom/autonavi/xm/navigation/engine/g;
+    iget-object v2, p0, Lcom/autonavi/navigation/api/guide/a/f;->c:Lcom/autonavi/wh/navigation/engine/g;
 
     iget v1, v1, Lcom/autonavi/navigation/api/map/model/ZoomLevel;->value:I
 
-    invoke-static {v1}, Lcom/autonavi/xm/navigation/server/map/GZoomLevel;->valueOfZoom(I)Lcom/autonavi/xm/navigation/server/map/GZoomLevel;
+    invoke-static {v1}, Lcom/autonavi/wh/navigation/server/map/GZoomLevel;->valueOfZoom(I)Lcom/autonavi/wh/navigation/server/map/GZoomLevel;
 
     move-result-object v1
 
-    invoke-virtual {v2, v1}, Lcom/autonavi/xm/navigation/engine/g;->a(Lcom/autonavi/xm/navigation/server/map/GZoomLevel;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v2, v1}, Lcom/autonavi/wh/navigation/engine/g;->a(Lcom/autonavi/wh/navigation/server/map/GZoomLevel;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     :cond_3
     iget-object v1, p0, Lcom/autonavi/navigation/api/guide/a/f;->d:Lcom/autonavi/navigation/api/guide/GuideManager$OnGuideListener;
@@ -353,13 +353,13 @@
     return v0
 
     :cond_0
-    iget-object v1, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/xm/navigation/engine/GDBL_Guide;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/wh/navigation/engine/GDBL_Guide;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/engine/GDBL_Guide;->j()Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/engine/GDBL_Guide;->j()Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v3, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v3, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v3, :cond_2
 
@@ -388,19 +388,19 @@
 .method public a(Lcom/autonavi/navigation/api/guide/SimulationGuidePlayer$PlaybackRate;)Z
     .locals 3
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->a:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->a:Lcom/autonavi/wh/navigation/engine/a;
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GParam;->G_DEMO_SPEED:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GParam;->G_DEMO_SPEED:Lcom/autonavi/wh/navigation/server/GParam;
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/guide/SimulationGuidePlayer$PlaybackRate;->ordinal()I
 
     move-result v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1, v2}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;I)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v1, :cond_0
 
@@ -424,7 +424,7 @@
 
     invoke-interface {v0, p0}, Lcom/autonavi/navigation/api/map/internal/l;->a(Lcom/autonavi/navigation/api/map/internal/a$b;)V
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/xm/navigation/engine/GDBL_Guide;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/wh/navigation/engine/GDBL_Guide;
 
     iget-object v2, p1, Lcom/autonavi/navigation/api/route/model/Route;->rule:Lcom/autonavi/navigation/api/route/model/CalculationRule;
 
@@ -432,17 +432,17 @@
 
     move-result v2
 
-    invoke-virtual {v0, v2}, Lcom/autonavi/xm/navigation/engine/GDBL_Guide;->a(I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v2}, Lcom/autonavi/wh/navigation/engine/GDBL_Guide;->a(I)Lcom/autonavi/wh/navigation/server/GStatus;
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_FAILED:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_FAILED:Lcom/autonavi/wh/navigation/server/GStatus;
 
     iget-boolean v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->e:Z
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/xm/navigation/engine/GDBL_Guide;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/wh/navigation/engine/GDBL_Guide;
 
-    invoke-virtual {v0}, Lcom/autonavi/xm/navigation/engine/GDBL_Guide;->k()Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0}, Lcom/autonavi/wh/navigation/engine/GDBL_Guide;->k()Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
@@ -450,7 +450,7 @@
 
     :cond_0
     :goto_0
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v2, :cond_1
 
@@ -459,7 +459,7 @@
     invoke-virtual {v2, v1}, Lcom/autonavi/navigation/api/guide/a/f$a;->sendEmptyMessage(I)Z
 
     :cond_1
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v2, :cond_3
 
@@ -469,13 +469,13 @@
     return v0
 
     :cond_2
-    iget-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/xm/navigation/engine/GDBL_Guide;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/wh/navigation/engine/GDBL_Guide;
 
-    invoke-virtual {v0}, Lcom/autonavi/xm/navigation/engine/GDBL_Guide;->i()Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0}, Lcom/autonavi/wh/navigation/engine/GDBL_Guide;->i()Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v2, :cond_0
 
@@ -502,9 +502,9 @@
 
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/xm/navigation/engine/GDBL_Guide;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/guide/a/f;->b:Lcom/autonavi/wh/navigation/engine/GDBL_Guide;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/engine/GDBL_Guide;->l()Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/engine/GDBL_Guide;->l()Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
@@ -527,7 +527,7 @@
 
     invoke-virtual {v2, v0}, Lcom/autonavi/navigation/api/guide/a/f$a;->removeMessages(I)V
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v2, :cond_1
 
@@ -556,15 +556,15 @@
 
     new-array v0, v0, [I
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/guide/a/f;->a:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/guide/a/f;->a:Lcom/autonavi/wh/navigation/engine/a;
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GParam;->G_DEMO_SPEED:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GParam;->G_DEMO_SPEED:Lcom/autonavi/wh/navigation/server/GParam;
 
-    invoke-virtual {v1, v2, v0}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;[I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1, v2, v0}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;[I)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v2, :cond_0
 

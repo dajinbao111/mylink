@@ -10,7 +10,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    invoke-static {}, Lcom/autonavi/xm/navigation/server/GStatus;->values()[Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-static {}, Lcom/autonavi/wh/navigation/server/GStatus;->values()[Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
@@ -23,9 +23,9 @@
     :try_start_0
     sget-object v0, Lcom/autonavi/navigation/api/guide/a/b$1;->a:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/GStatus;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/GStatus;->ordinal()I
 
     move-result v1
 
@@ -39,9 +39,9 @@
     :try_start_1
     sget-object v0, Lcom/autonavi/navigation/api/guide/a/b$1;->a:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OP_CANCELED:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OP_CANCELED:Lcom/autonavi/wh/navigation/server/GStatus;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/GStatus;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/GStatus;->ordinal()I
 
     move-result v1
 
@@ -55,9 +55,9 @@
     :try_start_2
     sget-object v0, Lcom/autonavi/navigation/api/guide/a/b$1;->a:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_TOO_FAR:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_TOO_FAR:Lcom/autonavi/wh/navigation/server/GStatus;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/GStatus;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/GStatus;->ordinal()I
 
     move-result v1
 
@@ -71,9 +71,9 @@
     :try_start_3
     sget-object v0, Lcom/autonavi/navigation/api/guide/a/b$1;->a:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_TOO_NEAR:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_TOO_NEAR:Lcom/autonavi/wh/navigation/server/GStatus;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/GStatus;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/GStatus;->ordinal()I
 
     move-result v1
 
@@ -87,9 +87,9 @@
     :try_start_4
     sget-object v0, Lcom/autonavi/navigation/api/guide/a/b$1;->a:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_NO_DATA:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_NO_DATA:Lcom/autonavi/wh/navigation/server/GStatus;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/GStatus;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/GStatus;->ordinal()I
 
     move-result v1
 

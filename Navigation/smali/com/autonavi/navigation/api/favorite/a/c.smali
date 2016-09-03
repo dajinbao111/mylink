@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field private final a:Lcom/autonavi/xm/navigation/engine/d;
+.field private final a:Lcom/autonavi/wh/navigation/engine/d;
 
 
 # direct methods
@@ -12,21 +12,21 @@
 
     invoke-direct {p0}, Lcom/autonavi/navigation/api/favorite/a/a;-><init>()V
 
-    invoke-static {}, Lcom/autonavi/xm/navigation/engine/d;->a()Lcom/autonavi/xm/navigation/engine/d;
+    invoke-static {}, Lcom/autonavi/wh/navigation/engine/d;->a()Lcom/autonavi/wh/navigation/engine/d;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iput-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
     return-void
 .end method
 
-.method private a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;)I
+.method private a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;)I
     .locals 2
 
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->c:[I
 
-    invoke-virtual {p1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;->ordinal()I
+    invoke-virtual {p1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;->ordinal()I
 
     move-result v1
 
@@ -110,12 +110,12 @@
     .end packed-switch
 .end method
 
-.method private a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/navigation/api/favorite/model/FavoriteCategory;
+.method private a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/navigation/api/favorite/model/FavoriteCategory;
     .locals 2
 
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->b:[I
 
-    invoke-virtual {p1}, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->ordinal()I
+    invoke-virtual {p1}, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->ordinal()I
 
     move-result v1
 
@@ -177,7 +177,7 @@
     .end packed-switch
 .end method
 
-.method private a(Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;)Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;
+.method private a(Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;)Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;
     .locals 4
 
     if-nez p1, :cond_0
@@ -190,21 +190,21 @@
     :cond_0
     new-instance v0, Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;
 
-    iget-object v1, p1, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;->eCategory:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    iget-object v1, p1, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;->eCategory:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-direct {p0, v1}, Lcom/autonavi/navigation/api/favorite/a/c;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/navigation/api/favorite/model/FavoriteCategory;
+    invoke-direct {p0, v1}, Lcom/autonavi/navigation/api/favorite/a/c;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/navigation/api/favorite/model/FavoriteCategory;
 
     move-result-object v1
 
-    iget-object v2, p1, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;->Poi:Lcom/autonavi/xm/navigation/server/poi/GPoi;
+    iget-object v2, p1, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;->Poi:Lcom/autonavi/wh/navigation/server/poi/GPoi;
 
-    invoke-static {v2}, Lcom/autonavi/navigation/api/poi/a/b;->a(Lcom/autonavi/xm/navigation/server/poi/GPoi;)Lcom/autonavi/navigation/api/poi/model/Poi;
+    invoke-static {v2}, Lcom/autonavi/navigation/api/poi/a/b;->a(Lcom/autonavi/wh/navigation/server/poi/GPoi;)Lcom/autonavi/navigation/api/poi/model/Poi;
 
     move-result-object v2
 
-    iget-object v3, p1, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;->eIconID:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    iget-object v3, p1, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;->eIconID:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    invoke-direct {p0, v3}, Lcom/autonavi/navigation/api/favorite/a/c;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;)I
+    invoke-direct {p0, v3}, Lcom/autonavi/navigation/api/favorite/a/c;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;)I
 
     move-result v3
 
@@ -231,7 +231,7 @@
     goto :goto_0
 .end method
 
-.method private a(Lcom/autonavi/navigation/api/poi/model/Poi;)Lcom/autonavi/xm/navigation/server/poi/GPoi;
+.method private a(Lcom/autonavi/navigation/api/poi/model/Poi;)Lcom/autonavi/wh/navigation/server/poi/GPoi;
     .locals 3
 
     if-nez p1, :cond_0
@@ -242,13 +242,13 @@
     return-object v0
 
     :cond_0
-    new-instance v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;
+    new-instance v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;
 
-    invoke-direct {v0}, Lcom/autonavi/xm/navigation/server/poi/GPoi;-><init>()V
+    invoke-direct {v0}, Lcom/autonavi/wh/navigation/server/poi/GPoi;-><init>()V
 
-    new-instance v1, Lcom/autonavi/xm/navigation/server/GCoord;
+    new-instance v1, Lcom/autonavi/wh/navigation/server/GCoord;
 
-    invoke-direct {v1}, Lcom/autonavi/xm/navigation/server/GCoord;-><init>()V
+    invoke-direct {v1}, Lcom/autonavi/wh/navigation/server/GCoord;-><init>()V
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getLatLng()Lcom/autonavi/navigation/api/map/model/LatLng;
 
@@ -256,7 +256,7 @@
 
     iget v2, v2, Lcom/autonavi/navigation/api/map/model/LatLng;->longitude:I
 
-    iput v2, v1, Lcom/autonavi/xm/navigation/server/GCoord;->x:I
+    iput v2, v1, Lcom/autonavi/wh/navigation/server/GCoord;->x:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getLatLng()Lcom/autonavi/navigation/api/map/model/LatLng;
 
@@ -264,57 +264,57 @@
 
     iget v2, v2, Lcom/autonavi/navigation/api/map/model/LatLng;->latitude:I
 
-    iput v2, v1, Lcom/autonavi/xm/navigation/server/GCoord;->y:I
+    iput v2, v1, Lcom/autonavi/wh/navigation/server/GCoord;->y:I
 
-    iput-object v1, v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;->Coord:Lcom/autonavi/xm/navigation/server/GCoord;
+    iput-object v1, v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;->Coord:Lcom/autonavi/wh/navigation/server/GCoord;
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;->szName:Ljava/lang/String;
+    iput-object v1, v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;->szName:Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getTel()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;->szTel:Ljava/lang/String;
+    iput-object v1, v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;->szTel:Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getAddress()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;->szAddr:Ljava/lang/String;
+    iput-object v1, v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;->szAddr:Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getDistance()I
 
     move-result v1
 
-    iput v1, v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;->lDistance:I
+    iput v1, v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;->lDistance:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getAdminCode()I
 
     move-result v1
 
-    iput v1, v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;->lAdminCode:I
+    iput v1, v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;->lAdminCode:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getCategory()I
 
     move-result v1
 
-    iput v1, v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;->lCategoryID:I
+    iput v1, v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;->lCategoryID:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getMatchedLevel()I
 
     move-result v1
 
-    iput v1, v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;->lMatchCode:I
+    iput v1, v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;->lMatchCode:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getMatchedMask()I
 
     move-result v1
 
-    iput v1, v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;->lHilightFlag:I
+    iput v1, v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;->lHilightFlag:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getTypeMask()I
 
@@ -322,7 +322,7 @@
 
     int-to-byte v1, v1
 
-    iput-byte v1, v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;->ucFlag:B
+    iput-byte v1, v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;->ucFlag:B
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getNodeId()I
 
@@ -330,7 +330,7 @@
 
     int-to-short v1, v1
 
-    iput-short v1, v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;->usNodeId:S
+    iput-short v1, v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;->usNodeId:S
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getOffsetLat()I
 
@@ -338,7 +338,7 @@
 
     int-to-short v1, v1
 
-    iput-short v1, v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;->siELatOff:S
+    iput-short v1, v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;->siELatOff:S
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/model/Poi;->getOffsetLng()I
 
@@ -346,39 +346,39 @@
 
     int-to-short v1, v1
 
-    iput-short v1, v0, Lcom/autonavi/xm/navigation/server/poi/GPoi;->siELonOff:S
+    iput-short v1, v0, Lcom/autonavi/wh/navigation/server/poi/GPoi;->siELonOff:S
 
     goto :goto_0
 .end method
 
-.method private b(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/xm/navigation/server/GStatus;
+.method private b(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/wh/navigation/server/GStatus;
     .locals 4
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->e(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->e(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    iget-object v2, v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;->eCategory:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    iget-object v2, v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;->eCategory:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    iget-object v3, v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;->eIconID:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    iget-object v3, v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;->eIconID:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    iget-object v0, v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;->Poi:Lcom/autonavi/xm/navigation/server/poi/GPoi;
+    iget-object v0, v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;->Poi:Lcom/autonavi/wh/navigation/server/poi/GPoi;
 
-    invoke-virtual {v1, v2, v3, v0}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;Lcom/autonavi/xm/navigation/server/poi/GPoi;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1, v2, v3, v0}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;Lcom/autonavi/wh/navigation/server/poi/GPoi;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private c(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/xm/navigation/server/GStatus;
+.method private c(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/wh/navigation/server/GStatus;
     .locals 4
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->e(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->e(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;
 
     move-result-object v0
 
@@ -396,9 +396,9 @@
 
     if-ne v1, v2, :cond_0
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    invoke-virtual {v1, v0}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1, v0}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
@@ -410,22 +410,22 @@
 
     invoke-virtual {p0, v1, v2}, Lcom/autonavi/navigation/api/favorite/a/c;->a(J)Z
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    iget-object v2, v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;->eCategory:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    iget-object v2, v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;->eCategory:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    iget-object v3, v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;->eIconID:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;
+    iget-object v3, v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;->eIconID:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;
 
-    iget-object v0, v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;->Poi:Lcom/autonavi/xm/navigation/server/poi/GPoi;
+    iget-object v0, v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;->Poi:Lcom/autonavi/wh/navigation/server/poi/GPoi;
 
-    invoke-virtual {v1, v2, v3, v0}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;Lcom/autonavi/xm/navigation/server/favorite/GFavoriteIcon;Lcom/autonavi/xm/navigation/server/poi/GPoi;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1, v2, v3, v0}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;Lcom/autonavi/wh/navigation/server/favorite/GFavoriteIcon;Lcom/autonavi/wh/navigation/server/poi/GPoi;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
     goto :goto_0
 .end method
 
-.method private c(Lcom/autonavi/navigation/api/favorite/model/FavoriteCategory;)Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+.method private c(Lcom/autonavi/navigation/api/favorite/model/FavoriteCategory;)Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
     .locals 2
 
     sget-object v0, Lcom/autonavi/navigation/api/favorite/a/c$1;->a:[I
@@ -438,43 +438,43 @@
 
     packed-switch v0, :pswitch_data_0
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_DEFAULT:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_DEFAULT:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
     :goto_0
     return-object v0
 
     :pswitch_0
-    sget-object v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_HISTORY:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_HISTORY:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
     goto :goto_0
 
     :pswitch_1
-    sget-object v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_ENTERTAINMENT:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_ENTERTAINMENT:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
     goto :goto_0
 
     :pswitch_2
-    sget-object v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_CUSTOMER:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_CUSTOMER:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
     goto :goto_0
 
     :pswitch_3
-    sget-object v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_SIGHT:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_SIGHT:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
     goto :goto_0
 
     :pswitch_4
-    sget-object v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_FRIEND:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_FRIEND:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
     goto :goto_0
 
     :pswitch_5
-    sget-object v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_COMPANY:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_COMPANY:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
     goto :goto_0
 
     :pswitch_6
-    sget-object v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_HOME:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_HOME:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
     goto :goto_0
 
@@ -524,7 +524,7 @@
     return-object v0
 .end method
 
-.method private e(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;
+.method private e(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;
     .locals 7
 
     if-nez p1, :cond_0
@@ -535,7 +535,7 @@
     return-object v0
 
     :cond_0
-    new-instance v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;
+    new-instance v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;
 
     const/4 v1, 0x0
 
@@ -549,19 +549,19 @@
 
     iget-object v4, p1, Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;->poi:Lcom/autonavi/navigation/api/poi/model/Poi;
 
-    invoke-direct {p0, v4}, Lcom/autonavi/navigation/api/favorite/a/c;->a(Lcom/autonavi/navigation/api/poi/model/Poi;)Lcom/autonavi/xm/navigation/server/poi/GPoi;
+    invoke-direct {p0, v4}, Lcom/autonavi/navigation/api/favorite/a/c;->a(Lcom/autonavi/navigation/api/poi/model/Poi;)Lcom/autonavi/wh/navigation/server/poi/GPoi;
 
     move-result-object v4
 
-    new-instance v5, Lcom/autonavi/xm/navigation/server/GDate;
+    new-instance v5, Lcom/autonavi/wh/navigation/server/GDate;
 
-    invoke-direct {v5}, Lcom/autonavi/xm/navigation/server/GDate;-><init>()V
+    invoke-direct {v5}, Lcom/autonavi/wh/navigation/server/GDate;-><init>()V
 
-    new-instance v6, Lcom/autonavi/xm/navigation/server/GTime;
+    new-instance v6, Lcom/autonavi/wh/navigation/server/GTime;
 
-    invoke-direct {v6}, Lcom/autonavi/xm/navigation/server/GTime;-><init>()V
+    invoke-direct {v6}, Lcom/autonavi/wh/navigation/server/GTime;-><init>()V
 
-    invoke-direct/range {v0 .. v6}, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;-><init>(IIILcom/autonavi/xm/navigation/server/poi/GPoi;Lcom/autonavi/xm/navigation/server/GDate;Lcom/autonavi/xm/navigation/server/GTime;)V
+    invoke-direct/range {v0 .. v6}, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;-><init>(IIILcom/autonavi/wh/navigation/server/poi/GPoi;Lcom/autonavi/wh/navigation/server/GDate;Lcom/autonavi/wh/navigation/server/GTime;)V
 
     goto :goto_0
 .end method
@@ -571,7 +571,7 @@
 .method public a(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;
     .locals 4
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     iget-wide v0, p1, Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;->id:J
 
@@ -581,18 +581,18 @@
 
     if-lez v0, :cond_0
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->c(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->c(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
     :goto_0
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-eq v0, v1, :cond_2
 
     const/4 v1, -0x1
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_DUPLICATE_DATA:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_DUPLICATE_DATA:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v2, :cond_1
 
@@ -606,14 +606,14 @@
     throw v1
 
     :cond_0
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->b(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->b(Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
     goto :goto_0
 
     :cond_1
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_NO_SPACE:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_NO_SPACE:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v2, :cond_3
 
@@ -637,53 +637,53 @@
 .method public a()Z
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_DEFAULT:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_DEFAULT:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/wh/navigation/server/GStatus;
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_HOME:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_HOME:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/wh/navigation/server/GStatus;
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_COMPANY:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_COMPANY:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/wh/navigation/server/GStatus;
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_SIGHT:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_SIGHT:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/wh/navigation/server/GStatus;
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_FRIEND:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_FRIEND:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/wh/navigation/server/GStatus;
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_CUSTOMER:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_CUSTOMER:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/wh/navigation/server/GStatus;
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_ENTERTAINMENT:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_ENTERTAINMENT:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/wh/navigation/server/GStatus;
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_HISTORY:Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;->GFAVORITE_CATEGORY_HISTORY:Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     const/4 v0, 0x1
 
@@ -693,17 +693,17 @@
 .method public a(Lcom/autonavi/navigation/api/favorite/model/FavoriteCategory;)Z
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->c(Lcom/autonavi/navigation/api/favorite/model/FavoriteCategory;)Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->c(Lcom/autonavi/navigation/api/favorite/model/FavoriteCategory;)Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v1, :cond_0
 
@@ -725,25 +725,25 @@
 
     const/4 v0, 0x1
 
-    new-array v3, v0, [Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoiList;
+    new-array v3, v0, [Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoiList;
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->c(Lcom/autonavi/navigation/api/favorite/model/FavoriteCategory;)Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->c(Lcom/autonavi/navigation/api/favorite/model/FavoriteCategory;)Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v3}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;[Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoiList;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1, v3}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;[Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoiList;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v1, :cond_0
 
     aget-object v0, v3, v2
 
-    iget v4, v0, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoiList;->nNumberOfItem:I
+    iget v4, v0, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoiList;->nNumberOfItem:I
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -756,11 +756,11 @@
 
     aget-object v5, v3, v2
 
-    iget-object v5, v5, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoiList;->pFavoritePOI:[Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;
+    iget-object v5, v5, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoiList;->pFavoritePOI:[Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;
 
     aget-object v5, v5, v1
 
-    invoke-direct {p0, v5}, Lcom/autonavi/navigation/api/favorite/a/c;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;)Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;
+    invoke-direct {p0, v5}, Lcom/autonavi/navigation/api/favorite/a/c;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;)Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;
 
     move-result-object v5
 
@@ -786,25 +786,25 @@
 
     const/4 v1, 0x0
 
-    new-array v3, v0, [Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoiList;
+    new-array v3, v0, [Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoiList;
 
-    iget-object v2, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v2, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->c(Lcom/autonavi/navigation/api/favorite/model/FavoriteCategory;)Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/favorite/a/c;->c(Lcom/autonavi/navigation/api/favorite/model/FavoriteCategory;)Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;
 
     move-result-object v4
 
-    invoke-virtual {v2, v4, v3}, Lcom/autonavi/xm/navigation/engine/d;->a(Lcom/autonavi/xm/navigation/server/favorite/GFavoriteCategory;[Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoiList;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v2, v4, v3}, Lcom/autonavi/wh/navigation/engine/d;->a(Lcom/autonavi/wh/navigation/server/favorite/GFavoriteCategory;[Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoiList;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v2
 
-    sget-object v4, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v4, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v2, v4, :cond_0
 
     aget-object v2, v3, v1
 
-    iget v4, v2, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoiList;->nNumberOfItem:I
+    iget v4, v2, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoiList;->nNumberOfItem:I
 
     move v2, v1
 
@@ -813,43 +813,43 @@
 
     aget-object v5, v3, v1
 
-    iget-object v5, v5, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoiList;->pFavoritePOI:[Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;
+    iget-object v5, v5, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoiList;->pFavoritePOI:[Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;
 
     aget-object v5, v5, v2
 
-    iget-object v6, v5, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;->Poi:Lcom/autonavi/xm/navigation/server/poi/GPoi;
+    iget-object v6, v5, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;->Poi:Lcom/autonavi/wh/navigation/server/poi/GPoi;
 
-    iget-object v6, v6, Lcom/autonavi/xm/navigation/server/poi/GPoi;->Coord:Lcom/autonavi/xm/navigation/server/GCoord;
+    iget-object v6, v6, Lcom/autonavi/wh/navigation/server/poi/GPoi;->Coord:Lcom/autonavi/wh/navigation/server/GCoord;
 
-    iget v6, v6, Lcom/autonavi/xm/navigation/server/GCoord;->x:I
+    iget v6, v6, Lcom/autonavi/wh/navigation/server/GCoord;->x:I
 
     iget v7, p2, Lcom/autonavi/navigation/api/map/model/LatLng;->longitude:I
 
     if-ne v6, v7, :cond_2
 
-    iget-object v6, v5, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;->Poi:Lcom/autonavi/xm/navigation/server/poi/GPoi;
+    iget-object v6, v5, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;->Poi:Lcom/autonavi/wh/navigation/server/poi/GPoi;
 
-    iget-object v6, v6, Lcom/autonavi/xm/navigation/server/poi/GPoi;->Coord:Lcom/autonavi/xm/navigation/server/GCoord;
+    iget-object v6, v6, Lcom/autonavi/wh/navigation/server/poi/GPoi;->Coord:Lcom/autonavi/wh/navigation/server/GCoord;
 
-    iget v6, v6, Lcom/autonavi/xm/navigation/server/GCoord;->y:I
+    iget v6, v6, Lcom/autonavi/wh/navigation/server/GCoord;->y:I
 
     iget v7, p2, Lcom/autonavi/navigation/api/map/model/LatLng;->latitude:I
 
     if-ne v6, v7, :cond_2
 
-    iget-object v2, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/xm/navigation/engine/d;
+    iget-object v2, p0, Lcom/autonavi/navigation/api/favorite/a/c;->a:Lcom/autonavi/wh/navigation/engine/d;
 
     new-array v3, v0, [I
 
-    iget v4, v5, Lcom/autonavi/xm/navigation/server/favorite/GFavoritePoi;->nIndex:I
+    iget v4, v5, Lcom/autonavi/wh/navigation/server/favorite/GFavoritePoi;->nIndex:I
 
     aput v4, v3, v1
 
-    invoke-virtual {v2, v3, v0}, Lcom/autonavi/xm/navigation/engine/d;->a([II)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v2, v3, v0}, Lcom/autonavi/wh/navigation/engine/d;->a([II)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v2
 
-    sget-object v3, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v3, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v2, v3, :cond_1
 

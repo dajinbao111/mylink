@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/autonavi/xm/navigation/server/guide/GJourneyNotifyCB;
+.implements Lcom/autonavi/wh/navigation/server/guide/GJourneyNotifyCB;
 
 
 # instance fields
@@ -30,7 +30,7 @@
 
 
 # virtual methods
-.method public GDBL_OnAddJourneyPoint([Lcom/autonavi/xm/navigation/server/guide/GRoadInfo;ILjava/lang/Object;)I
+.method public GDBL_OnAddJourneyPoint([Lcom/autonavi/wh/navigation/server/guide/GRoadInfo;ILjava/lang/Object;)I
     .locals 9
 
     const/4 v1, 0x1
@@ -67,13 +67,13 @@
 
     aget-object v6, p1, v4
 
-    iget v7, v6, Lcom/autonavi/xm/navigation/server/guide/GRoadInfo;->nRoadType:I
+    iget v7, v6, Lcom/autonavi/wh/navigation/server/guide/GRoadInfo;->nRoadType:I
 
     const/16 v8, 0xa
 
     if-eq v7, v8, :cond_2
 
-    iget v6, v6, Lcom/autonavi/xm/navigation/server/guide/GRoadInfo;->nRoadType:I
+    iget v6, v6, Lcom/autonavi/wh/navigation/server/guide/GRoadInfo;->nRoadType:I
 
     const/16 v7, 0xb
 
@@ -112,7 +112,7 @@
 
     iget-object v4, p0, Lcom/autonavi/navigation/api/route/a/e$1;->a:Ljava/util/ArrayList;
 
-    invoke-static {v2}, Lcom/autonavi/navigation/api/guide/a/b;->a(Lcom/autonavi/xm/navigation/server/guide/GRoadInfo;)Lcom/autonavi/navigation/api/route/model/Road;
+    invoke-static {v2}, Lcom/autonavi/navigation/api/guide/a/b;->a(Lcom/autonavi/wh/navigation/server/guide/GRoadInfo;)Lcom/autonavi/navigation/api/route/model/Road;
 
     move-result-object v2
 
@@ -132,7 +132,7 @@
 
     aget-object v1, p1, v3
 
-    invoke-static {v1}, Lcom/autonavi/navigation/api/guide/a/b;->a(Lcom/autonavi/xm/navigation/server/guide/GRoadInfo;)Lcom/autonavi/navigation/api/route/model/Road;
+    invoke-static {v1}, Lcom/autonavi/navigation/api/guide/a/b;->a(Lcom/autonavi/wh/navigation/server/guide/GRoadInfo;)Lcom/autonavi/navigation/api/route/model/Road;
 
     move-result-object v1
 

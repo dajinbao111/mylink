@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/autonavi/xm/navigation/server/guide/GJourneyNotifyCB;
+.implements Lcom/autonavi/wh/navigation/server/guide/GJourneyNotifyCB;
 
 
 # instance fields
@@ -26,7 +26,7 @@
 
 
 # virtual methods
-.method public GDBL_OnAddJourneyPoint([Lcom/autonavi/xm/navigation/server/guide/GRoadInfo;ILjava/lang/Object;)I
+.method public GDBL_OnAddJourneyPoint([Lcom/autonavi/wh/navigation/server/guide/GRoadInfo;ILjava/lang/Object;)I
     .locals 4
 
     const/4 v1, 0x0
@@ -49,7 +49,7 @@
 
     aget-object v2, p1, v0
 
-    iget v2, v2, Lcom/autonavi/xm/navigation/server/guide/GRoadInfo;->nID:I
+    iget v2, v2, Lcom/autonavi/wh/navigation/server/guide/GRoadInfo;->nID:I
 
     iget-object v3, p0, Lcom/autonavi/navigation/api/route/a/e$6;->a:Lcom/autonavi/navigation/api/route/model/Road;
 

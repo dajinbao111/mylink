@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field private final b:Lcom/autonavi/xm/navigation/engine/a;
+.field private final b:Lcom/autonavi/wh/navigation/engine/a;
 
 
 # direct methods
@@ -12,11 +12,11 @@
 
     invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/a;-><init>(Landroid/content/Context;)V
 
-    invoke-static {}, Lcom/autonavi/xm/navigation/engine/a;->a()Lcom/autonavi/xm/navigation/engine/a;
+    invoke-static {}, Lcom/autonavi/wh/navigation/engine/a;->a()Lcom/autonavi/wh/navigation/engine/a;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iput-object v0, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
     return-void
 .end method
@@ -24,13 +24,13 @@
 .method private a(I)Z
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-virtual {v0, p1}, Lcom/autonavi/xm/navigation/engine/a;->a(I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, p1}, Lcom/autonavi/wh/navigation/engine/a;->a(I)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v1, :cond_0
 
@@ -52,21 +52,21 @@
 
     const/4 v0, 0x1
 
-    new-array v0, v0, [Lcom/autonavi/xm/navigation/server/map/GPaletteList;
+    new-array v0, v0, [Lcom/autonavi/wh/navigation/server/map/GPaletteList;
 
-    iget-object v2, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v2, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-virtual {v2, p1, v0}, Lcom/autonavi/xm/navigation/engine/a;->a(Z[Lcom/autonavi/xm/navigation/server/map/GPaletteList;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v2, p1, v0}, Lcom/autonavi/wh/navigation/engine/a;->a(Z[Lcom/autonavi/wh/navigation/server/map/GPaletteList;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v2
 
-    sget-object v3, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v3, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v2, v3, :cond_0
 
     aget-object v0, v0, v1
 
-    iget-object v3, v0, Lcom/autonavi/xm/navigation/server/map/GPaletteList;->pPalette:[Lcom/autonavi/xm/navigation/server/map/GPalette;
+    iget-object v3, v0, Lcom/autonavi/wh/navigation/server/map/GPaletteList;->pPalette:[Lcom/autonavi/wh/navigation/server/map/GPalette;
 
     array-length v0, v3
 
@@ -83,9 +83,9 @@
 
     new-instance v6, Lcom/autonavi/navigation/api/settings/model/MapTheme;
 
-    iget v7, v5, Lcom/autonavi/xm/navigation/server/map/GPalette;->nPaletteID:I
+    iget v7, v5, Lcom/autonavi/wh/navigation/server/map/GPalette;->nPaletteID:I
 
-    iget-object v5, v5, Lcom/autonavi/xm/navigation/server/map/GPalette;->szPaletteName:Ljava/lang/String;
+    iget-object v5, v5, Lcom/autonavi/wh/navigation/server/map/GPalette;->szPaletteName:Ljava/lang/String;
 
     invoke-direct {v6, v7, v5}, Lcom/autonavi/navigation/api/settings/model/MapTheme;-><init>(ILjava/lang/String;)V
 
@@ -104,7 +104,7 @@
     return-object v0
 .end method
 
-.method private b(Ljava/lang/String;)Lcom/autonavi/xm/navigation/server/GParam;
+.method private b(Ljava/lang/String;)Lcom/autonavi/wh/navigation/server/GParam;
     .locals 2
 
     const-string v0, "rect_of_map"
@@ -123,13 +123,13 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_H_MAP_VIEW_RECT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_H_MAP_VIEW_RECT:Lcom/autonavi/wh/navigation/server/GParam;
 
     :goto_0
     return-object v0
 
     :cond_0
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_V_MAP_VIEW_RECT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_V_MAP_VIEW_RECT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto :goto_0
 
@@ -150,12 +150,12 @@
 
     if-eqz v0, :cond_2
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_H_OVERVIEW_FRGND_RECT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_H_OVERVIEW_FRGND_RECT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto :goto_0
 
     :cond_2
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_V_OVERVIEW_FRGND_RECT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_V_OVERVIEW_FRGND_RECT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto :goto_0
 
@@ -176,12 +176,12 @@
 
     if-eqz v0, :cond_4
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_H_MAP_CAR_POSITION:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_H_MAP_CAR_POSITION:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto :goto_0
 
     :cond_4
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_V_MAP_CAR_POSITION:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_V_MAP_CAR_POSITION:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto :goto_0
 
@@ -202,12 +202,12 @@
 
     if-eqz v0, :cond_6
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_H_ZOOM_VIEW_RECT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_H_ZOOM_VIEW_RECT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto :goto_0
 
     :cond_6
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_V_ZOOM_VIEW_RECT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_V_ZOOM_VIEW_RECT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto :goto_0
 
@@ -228,12 +228,12 @@
 
     if-eqz v0, :cond_8
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_H_MAP_CAR_POSITION_ZOOM:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_H_MAP_CAR_POSITION_ZOOM:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto :goto_0
 
     :cond_8
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_V_MAP_CAR_POSITION_ZOOM:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_V_MAP_CAR_POSITION_ZOOM:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto :goto_0
 
@@ -254,12 +254,12 @@
 
     if-eqz v0, :cond_a
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_H_GUIDEPOST_VIEW_RECT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_H_GUIDEPOST_VIEW_RECT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto :goto_0
 
     :cond_a
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_V_GUIDEPOST_VIEW_RECT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_V_GUIDEPOST_VIEW_RECT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto :goto_0
 
@@ -280,12 +280,12 @@
 
     if-eqz v0, :cond_c
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_H_MAP_CAR_POSITION_GUIDEPOST:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_H_MAP_CAR_POSITION_GUIDEPOST:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
     :cond_c
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_V_MAP_CAR_POSITION_GUIDEPOST:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_V_MAP_CAR_POSITION_GUIDEPOST:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -306,12 +306,12 @@
 
     if-eqz v0, :cond_e
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_H_SIGNPOST_VIEW_RECT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_H_SIGNPOST_VIEW_RECT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
     :cond_e
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_V_SIGNPOST_VIEW_RECT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_V_SIGNPOST_VIEW_RECT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -332,12 +332,12 @@
 
     if-eqz v0, :cond_10
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_H_MAP_CAR_POSITION_SIGNPOST:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_H_MAP_CAR_POSITION_SIGNPOST:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
     :cond_10
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_V_MAP_CAR_POSITION_SIGNPOST:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_V_MAP_CAR_POSITION_SIGNPOST:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -358,12 +358,12 @@
 
     if-eqz v0, :cond_12
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_H_OVERVIEW_BKGND_RECT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_H_OVERVIEW_BKGND_RECT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
     :cond_12
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_V_OVERVIEW_BKGND_RECT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_V_OVERVIEW_BKGND_RECT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -376,7 +376,7 @@
 
     if-eqz v0, :cond_14
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_ROUTE_OPTION:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_ROUTE_OPTION:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -389,7 +389,7 @@
 
     if-eqz v0, :cond_15
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_LANGUAGE:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_LANGUAGE:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -402,7 +402,7 @@
 
     if-eqz v0, :cond_16
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_DISPLAY_ORIENTATION:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_DISPLAY_ORIENTATION:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -415,7 +415,7 @@
 
     if-eqz v0, :cond_17
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_SHOW_TMC:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_SHOW_TMC:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -428,7 +428,7 @@
 
     if-eqz v0, :cond_18
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_FONT_SIZE:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_FONT_SIZE:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -441,7 +441,7 @@
 
     if-eqz v0, :cond_19
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_DAYNIGHT_MODE:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_DAYNIGHT_MODE:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -454,7 +454,7 @@
 
     if-eqz v0, :cond_1a
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_POI_DENSITY:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_POI_DENSITY:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -473,12 +473,12 @@
 
     if-eqz v0, :cond_1b
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_DAY_PALETTE_INDEX:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_DAY_PALETTE_INDEX:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
     :cond_1b
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_NIGHT_PALETTE_INDEX:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_NIGHT_PALETTE_INDEX:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -491,7 +491,7 @@
 
     if-eqz v0, :cond_1d
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_DAY_PALETTE_INDEX:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_DAY_PALETTE_INDEX:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -504,7 +504,7 @@
 
     if-eqz v0, :cond_1e
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_NIGHT_PALETTE_INDEX:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_NIGHT_PALETTE_INDEX:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -517,7 +517,7 @@
 
     if-eqz v0, :cond_1f
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_OVERSPEED:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_OVERSPEED:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -530,7 +530,7 @@
 
     if-eqz v0, :cond_20
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_NORMALWAY_LIMIT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_NORMALWAY_LIMIT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -543,7 +543,7 @@
 
     if-eqz v0, :cond_21
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_HIGHWAY_LIMIT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_HIGHWAY_LIMIT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -556,7 +556,7 @@
 
     if-eqz v0, :cond_22
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_WARM_PROMPT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_WARM_PROMPT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -569,7 +569,7 @@
 
     if-eqz v0, :cond_23
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_PROMPT_OPTION:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_PROMPT_OPTION:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -582,7 +582,7 @@
 
     if-eqz v0, :cond_24
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_VOLUME:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_VOLUME:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -595,7 +595,7 @@
 
     if-eqz v0, :cond_25
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MUTE:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MUTE:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -608,7 +608,7 @@
 
     if-eqz v0, :cond_26
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_SAFETY_INFORMATION:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_SAFETY_INFORMATION:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -621,7 +621,7 @@
 
     if-eqz v0, :cond_27
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_SPEAKER_OPTION:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_SPEAKER_OPTION:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -634,7 +634,7 @@
 
     if-eqz v0, :cond_28
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_SHOW_CURSOR:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_SHOW_CURSOR:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -647,7 +647,7 @@
 
     if-eqz v0, :cond_29
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_SHOW_ZOOM_VIEW:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_SHOW_ZOOM_VIEW:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -660,7 +660,7 @@
 
     if-eqz v0, :cond_2a
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_SHOW_TRACK:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_SHOW_TRACK:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -673,7 +673,7 @@
 
     if-eqz v0, :cond_2b
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_SHOW_GUIDEPOST:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_SHOW_GUIDEPOST:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -686,7 +686,7 @@
 
     if-eqz v0, :cond_2c
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_SHOW_SIGNPOST:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_SHOW_SIGNPOST:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -699,7 +699,7 @@
 
     if-eqz v0, :cond_2d
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_AUTO_MODE_DAYNIGHT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_AUTO_MODE_DAYNIGHT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -712,7 +712,7 @@
 
     if-eqz v0, :cond_2e
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_CAR_IMAGE_INDEX:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_CAR_IMAGE_INDEX:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -725,7 +725,7 @@
 
     if-eqz v0, :cond_2f
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_SHOW_ORIGIN_CAR:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_SHOW_ORIGIN_CAR:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -738,7 +738,7 @@
 
     if-eqz v0, :cond_30
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_DISABLE_GPS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_DISABLE_GPS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -751,7 +751,7 @@
 
     if-eqz v0, :cond_31
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_DISABLE_ECOMPASS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_DISABLE_ECOMPASS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -764,7 +764,7 @@
 
     if-eqz v0, :cond_32
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_SHOW_TMCEVENT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_SHOW_TMCEVENT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -777,7 +777,7 @@
 
     if-eqz v0, :cond_33
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_TMC_EVENT_NORMALWAYLIMIT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_TMC_EVENT_NORMALWAYLIMIT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -790,7 +790,7 @@
 
     if-eqz v0, :cond_34
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_SHOW_TMCSTREAM:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_SHOW_TMCSTREAM:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -803,7 +803,7 @@
 
     if-eqz v0, :cond_35
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_TMC_SHOW_OPTION:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_TMC_SHOW_OPTION:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -816,7 +816,7 @@
 
     if-eqz v0, :cond_36
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_SHOW_TMCSTREAMEVENT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_SHOW_TMCSTREAMEVENT:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -829,7 +829,7 @@
 
     if-eqz v0, :cond_37
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_ROUTE_TMC_OPTION:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_ROUTE_TMC_OPTION:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -842,7 +842,7 @@
 
     if-eqz v0, :cond_38
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_ROUTE_TMC_RECALCULATE:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_ROUTE_TMC_RECALCULATE:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -855,7 +855,7 @@
 
     if-eqz v0, :cond_39
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_SHOW_ANIMATED:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_SHOW_ANIMATED:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -868,7 +868,7 @@
 
     if-eqz v0, :cond_3a
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_GUIDE_STATUS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_GUIDE_STATUS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -881,7 +881,7 @@
 
     if-eqz v0, :cond_3b
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_DEMO_STATUS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_DEMO_STATUS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -894,7 +894,7 @@
 
     if-eqz v0, :cond_3c
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_REGIONAVOID_ONOFF:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_REGIONAVOID_ONOFF:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -907,7 +907,7 @@
 
     if-eqz v0, :cond_3d
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_SHOW_ORIGIN_CAR:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_SHOW_ORIGIN_CAR:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -920,7 +920,7 @@
 
     if-eqz v0, :cond_3e
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_DETOUR_TYPE:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_DETOUR_TYPE:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -933,7 +933,7 @@
 
     if-eqz v0, :cond_3f
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_ROUTE_FLAG:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_ROUTE_FLAG:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -991,7 +991,7 @@
 
     if-eqz v0, :cond_43
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_SPEAK_GUIDANCE:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_SPEAK_GUIDANCE:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1036,7 +1036,7 @@
 
     if-eqz v0, :cond_46
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_ICON_SIZE:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_ICON_SIZE:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1083,7 +1083,7 @@
 
     if-eqz v0, :cond_49
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_GRAPHICS_LIB:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_GRAPHICS_LIB:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1096,7 +1096,7 @@
 
     if-eqz v0, :cond_4a
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_FAVORITE_SHOW_OPTION:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_FAVORITE_SHOW_OPTION:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1126,7 +1126,7 @@
 
     if-eqz v0, :cond_4c
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_GUIDE_CLUSTERNORMALDIS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_GUIDE_CLUSTERNORMALDIS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1139,7 +1139,7 @@
 
     if-eqz v0, :cond_4d
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_GUIDE_CLUSTERSIMPLEDIS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_GUIDE_CLUSTERSIMPLEDIS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1152,7 +1152,7 @@
 
     if-eqz v0, :cond_4e
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_GUIDE_CLUSTERPRENORMALDIS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_GUIDE_CLUSTERPRENORMALDIS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1165,7 +1165,7 @@
 
     if-eqz v0, :cond_4f
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_GUIDE_HWCLUSTERNORMALDIS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_GUIDE_HWCLUSTERNORMALDIS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1178,7 +1178,7 @@
 
     if-eqz v0, :cond_50
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_GUIDE_HWCLUSTERSIMPLEDIS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_GUIDE_HWCLUSTERSIMPLEDIS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1191,7 +1191,7 @@
 
     if-eqz v0, :cond_51
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_GUIDE_HWCLUSTERPRENORMALDIS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_GUIDE_HWCLUSTERPRENORMALDIS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1204,7 +1204,7 @@
 
     if-eqz v0, :cond_52
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_GUIDE_EWCLUSTERNORMALDIS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_GUIDE_EWCLUSTERNORMALDIS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1217,7 +1217,7 @@
 
     if-eqz v0, :cond_53
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_GUIDE_EWCLUSTERSIMPLEDIS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_GUIDE_EWCLUSTERSIMPLEDIS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1230,7 +1230,7 @@
 
     if-eqz v0, :cond_54
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_GUIDE_EWCLUSTERPRENORMALDIS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_GUIDE_EWCLUSTERPRENORMALDIS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1243,7 +1243,7 @@
 
     if-eqz v0, :cond_55
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GParam;->G_SHOW_ECOMPASS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GParam;->G_SHOW_ECOMPASS:Lcom/autonavi/wh/navigation/server/GParam;
 
     goto/16 :goto_0
 
@@ -1258,7 +1258,7 @@
 .method public a(Ljava/lang/String;)Z
     .locals 1
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/xm/navigation/server/GParam;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/wh/navigation/server/GParam;
 
     move-result-object v0
 
@@ -1309,11 +1309,11 @@
 
     if-eqz v2, :cond_2
 
-    invoke-static {}, Lcom/autonavi/xm/navigation/engine/f;->a()Lcom/autonavi/xm/navigation/engine/f;
+    invoke-static {}, Lcom/autonavi/wh/navigation/engine/f;->a()Lcom/autonavi/wh/navigation/engine/f;
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Lcom/autonavi/xm/navigation/engine/f;->b(I)Z
+    invoke-virtual {v0, p2}, Lcom/autonavi/wh/navigation/engine/f;->b(I)Z
 
     move-result v1
 
@@ -1328,11 +1328,11 @@
 
     if-eqz v2, :cond_3
 
-    invoke-static {}, Lcom/autonavi/xm/navigation/engine/f;->a()Lcom/autonavi/xm/navigation/engine/f;
+    invoke-static {}, Lcom/autonavi/wh/navigation/engine/f;->a()Lcom/autonavi/wh/navigation/engine/f;
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Lcom/autonavi/xm/navigation/engine/f;->c(I)Z
+    invoke-virtual {v0, p2}, Lcom/autonavi/wh/navigation/engine/f;->c(I)Z
 
     move-result v1
 
@@ -1362,7 +1362,7 @@
     goto :goto_1
 
     :cond_5
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/xm/navigation/server/GParam;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/wh/navigation/server/GParam;
 
     move-result-object v2
 
@@ -1395,32 +1395,32 @@
 
     if-eqz v3, :cond_7
 
-    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    sget-object v4, Lcom/autonavi/xm/navigation/server/GParam;->G_TMC_EVENT_NORMALWAYRADIUS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v4, Lcom/autonavi/wh/navigation/server/GParam;->G_TMC_EVENT_NORMALWAYRADIUS:Lcom/autonavi/wh/navigation/server/GParam;
 
-    invoke-virtual {v3, v4, p2}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v3, v4, p2}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;I)Lcom/autonavi/wh/navigation/server/GStatus;
 
-    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    sget-object v4, Lcom/autonavi/xm/navigation/server/GParam;->G_TMC_EVENT_HIGHWAYLIMIT:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v4, Lcom/autonavi/wh/navigation/server/GParam;->G_TMC_EVENT_HIGHWAYLIMIT:Lcom/autonavi/wh/navigation/server/GParam;
 
-    invoke-virtual {v3, v4, p2}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v3, v4, p2}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;I)Lcom/autonavi/wh/navigation/server/GStatus;
 
-    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    sget-object v4, Lcom/autonavi/xm/navigation/server/GParam;->G_TMC_EVENT_HIGHWAYRADIUS:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v4, Lcom/autonavi/wh/navigation/server/GParam;->G_TMC_EVENT_HIGHWAYRADIUS:Lcom/autonavi/wh/navigation/server/GParam;
 
-    invoke-virtual {v3, v4, p2}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v3, v4, p2}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;I)Lcom/autonavi/wh/navigation/server/GStatus;
 
     :cond_7
-    sget-object v3, Lcom/autonavi/xm/navigation/server/GParam;->G_DEMO_SPEED:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v3, Lcom/autonavi/wh/navigation/server/GParam;->G_DEMO_SPEED:Lcom/autonavi/wh/navigation/server/GParam;
 
     if-ne v2, v3, :cond_8
 
-    sget-object v3, Lcom/autonavi/xm/navigation/server/map/GDemoSpeed;->GDEMO_SPEED_JUMP:Lcom/autonavi/xm/navigation/server/map/GDemoSpeed;
+    sget-object v3, Lcom/autonavi/wh/navigation/server/map/GDemoSpeed;->GDEMO_SPEED_JUMP:Lcom/autonavi/wh/navigation/server/map/GDemoSpeed;
 
-    invoke-virtual {v3}, Lcom/autonavi/xm/navigation/server/map/GDemoSpeed;->ordinal()I
+    invoke-virtual {v3}, Lcom/autonavi/wh/navigation/server/map/GDemoSpeed;->ordinal()I
 
     move-result v3
 
@@ -1428,9 +1428,9 @@
 
     move-result v3
 
-    sget-object v4, Lcom/autonavi/xm/navigation/server/map/GDemoSpeed;->GDEMO_SPEED_LOW:Lcom/autonavi/xm/navigation/server/map/GDemoSpeed;
+    sget-object v4, Lcom/autonavi/wh/navigation/server/map/GDemoSpeed;->GDEMO_SPEED_LOW:Lcom/autonavi/wh/navigation/server/map/GDemoSpeed;
 
-    invoke-virtual {v4}, Lcom/autonavi/xm/navigation/server/map/GDemoSpeed;->ordinal()I
+    invoke-virtual {v4}, Lcom/autonavi/wh/navigation/server/map/GDemoSpeed;->ordinal()I
 
     move-result v4
 
@@ -1439,13 +1439,13 @@
     move-result p2
 
     :cond_8
-    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-virtual {v3, v2, p2}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v3, v2, p2}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;I)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v2
 
-    sget-object v3, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v3, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-eq v2, v3, :cond_0
 
@@ -1466,25 +1466,25 @@
     return v0
 
     :cond_1
-    new-instance v1, Lcom/autonavi/xm/navigation/server/GCoord;
+    new-instance v1, Lcom/autonavi/wh/navigation/server/GCoord;
 
     iget v2, p2, Landroid/graphics/Point;->x:I
 
     iget v3, p2, Landroid/graphics/Point;->y:I
 
-    invoke-direct {v1, v2, v3}, Lcom/autonavi/xm/navigation/server/GCoord;-><init>(II)V
+    invoke-direct {v1, v2, v3}, Lcom/autonavi/wh/navigation/server/GCoord;-><init>(II)V
 
-    iget-object v2, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v2, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/xm/navigation/server/GParam;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/wh/navigation/server/GParam;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3, v1}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;Lcom/autonavi/xm/navigation/server/GCoord;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v2, v3, v1}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;Lcom/autonavi/wh/navigation/server/GCoord;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v2, :cond_0
 
@@ -1505,11 +1505,11 @@
     return v0
 
     :cond_1
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/xm/navigation/server/GParam;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/wh/navigation/server/GParam;
 
     move-result-object v1
 
-    new-instance v2, Lcom/autonavi/xm/navigation/server/GRect;
+    new-instance v2, Lcom/autonavi/wh/navigation/server/GRect;
 
     iget v3, p2, Landroid/graphics/Rect;->left:I
 
@@ -1519,15 +1519,15 @@
 
     iget v6, p2, Landroid/graphics/Rect;->bottom:I
 
-    invoke-direct {v2, v3, v4, v5, v6}, Lcom/autonavi/xm/navigation/server/GRect;-><init>(IIII)V
+    invoke-direct {v2, v3, v4, v5, v6}, Lcom/autonavi/wh/navigation/server/GRect;-><init>(IIII)V
 
-    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-virtual {v3, v1, v2}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;Lcom/autonavi/xm/navigation/server/GRect;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v3, v1, v2}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;Lcom/autonavi/wh/navigation/server/GRect;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v2, :cond_0
 
@@ -1557,15 +1557,15 @@
 
     new-array v0, v3, [I
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    sget-object v4, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_POI_PRIORITY:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v4, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_POI_PRIORITY:Lcom/autonavi/wh/navigation/server/GParam;
 
-    invoke-virtual {v1, v4, v0}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;[I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1, v4, v0}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;[I)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v4, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v4, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v4, :cond_4
 
@@ -1636,15 +1636,15 @@
     move v0, v1
 
     :goto_4
-    iget-object v1, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    sget-object v4, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_POI_PRIORITY:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v4, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_POI_PRIORITY:Lcom/autonavi/wh/navigation/server/GParam;
 
-    invoke-virtual {v1, v4, v0}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1, v4, v0}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;I)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v1, :cond_4
 
@@ -1671,25 +1671,25 @@
     return v0
 
     :cond_1
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/xm/navigation/server/GParam;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/wh/navigation/server/GParam;
 
     move-result-object v1
 
-    new-instance v2, Lcom/autonavi/xm/navigation/server/GSize;
+    new-instance v2, Lcom/autonavi/wh/navigation/server/GSize;
 
     iget v3, p2, Lcom/autonavi/navigation/api/settings/model/Size;->width:I
 
     iget v4, p2, Lcom/autonavi/navigation/api/settings/model/Size;->height:I
 
-    invoke-direct {v2, v3, v4}, Lcom/autonavi/xm/navigation/server/GSize;-><init>(II)V
+    invoke-direct {v2, v3, v4}, Lcom/autonavi/wh/navigation/server/GSize;-><init>(II)V
 
-    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-virtual {v3, v1, v2}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;Lcom/autonavi/xm/navigation/server/GSize;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v3, v1, v2}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;Lcom/autonavi/wh/navigation/server/GSize;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v2, :cond_0
 
@@ -1713,18 +1713,18 @@
 
     if-eqz v0, :cond_3
 
-    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
     if-nez p2, :cond_1
 
     move v0, v1
 
     :goto_0
-    invoke-virtual {v3, v0}, Lcom/autonavi/xm/navigation/engine/a;->a(Z)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v3, v0}, Lcom/autonavi/wh/navigation/engine/a;->a(Z)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v3, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v3, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v3, :cond_2
 
@@ -1743,7 +1743,7 @@
     goto :goto_1
 
     :cond_3
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/xm/navigation/server/GParam;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/wh/navigation/server/GParam;
 
     move-result-object v0
 
@@ -1768,13 +1768,13 @@
     goto :goto_1
 
     :cond_4
-    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-virtual {v3, v0, p2}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;Z)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v3, v0, p2}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;Z)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v3, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v3, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-eq v0, v3, :cond_0
 
@@ -1786,7 +1786,7 @@
 .method public b(Ljava/lang/String;I)I
     .locals 3
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/xm/navigation/server/GParam;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/wh/navigation/server/GParam;
 
     move-result-object v0
 
@@ -1809,13 +1809,13 @@
 
     new-array v1, v1, [I
 
-    iget-object v2, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v2, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-virtual {v2, v0, v1}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;[I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v2, v0, v1}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;[I)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v2, :cond_0
 
@@ -1831,19 +1831,19 @@
 
     const/4 v0, 0x1
 
-    new-array v0, v0, [Lcom/autonavi/xm/navigation/server/GCoord;
+    new-array v0, v0, [Lcom/autonavi/wh/navigation/server/GCoord;
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/xm/navigation/server/GParam;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/wh/navigation/server/GParam;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2, v0}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;[Lcom/autonavi/xm/navigation/server/GCoord;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1, v2, v0}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;[Lcom/autonavi/wh/navigation/server/GCoord;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v2, :cond_0
 
@@ -1853,9 +1853,9 @@
 
     new-instance p2, Landroid/graphics/Point;
 
-    iget v1, v0, Lcom/autonavi/xm/navigation/server/GCoord;->x:I
+    iget v1, v0, Lcom/autonavi/wh/navigation/server/GCoord;->x:I
 
-    iget v0, v0, Lcom/autonavi/xm/navigation/server/GCoord;->y:I
+    iget v0, v0, Lcom/autonavi/wh/navigation/server/GCoord;->y:I
 
     invoke-direct {p2, v1, v0}, Landroid/graphics/Point;-><init>(II)V
 
@@ -1868,19 +1868,19 @@
 
     const/4 v0, 0x1
 
-    new-array v0, v0, [Lcom/autonavi/xm/navigation/server/GRect;
+    new-array v0, v0, [Lcom/autonavi/wh/navigation/server/GRect;
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/xm/navigation/server/GParam;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/wh/navigation/server/GParam;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2, v0}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;[Lcom/autonavi/xm/navigation/server/GRect;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1, v2, v0}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;[Lcom/autonavi/wh/navigation/server/GRect;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v2, :cond_0
 
@@ -1890,13 +1890,13 @@
 
     new-instance p2, Landroid/graphics/Rect;
 
-    iget v1, v0, Lcom/autonavi/xm/navigation/server/GRect;->left:I
+    iget v1, v0, Lcom/autonavi/wh/navigation/server/GRect;->left:I
 
-    iget v2, v0, Lcom/autonavi/xm/navigation/server/GRect;->top:I
+    iget v2, v0, Lcom/autonavi/wh/navigation/server/GRect;->top:I
 
-    iget v3, v0, Lcom/autonavi/xm/navigation/server/GRect;->right:I
+    iget v3, v0, Lcom/autonavi/wh/navigation/server/GRect;->right:I
 
-    iget v0, v0, Lcom/autonavi/xm/navigation/server/GRect;->bottom:I
+    iget v0, v0, Lcom/autonavi/wh/navigation/server/GRect;->bottom:I
 
     invoke-direct {p2, v1, v2, v3, v0}, Landroid/graphics/Rect;-><init>(IIII)V
 
@@ -1927,15 +1927,15 @@
 
     new-array v0, v1, [I
 
-    iget-object v4, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v4, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    sget-object v5, Lcom/autonavi/xm/navigation/server/GParam;->G_MAP_POI_PRIORITY:Lcom/autonavi/xm/navigation/server/GParam;
+    sget-object v5, Lcom/autonavi/wh/navigation/server/GParam;->G_MAP_POI_PRIORITY:Lcom/autonavi/wh/navigation/server/GParam;
 
-    invoke-virtual {v4, v5, v0}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;[I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v4, v5, v0}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;[I)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v4
 
-    sget-object v5, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v5, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v4, v5, :cond_c
 
@@ -2087,16 +2087,16 @@
     :cond_a
     new-array v4, v8, [Lcom/autonavi/navigation/api/settings/model/MyLocationIcon;
 
-    new-array v1, v1, [Lcom/autonavi/xm/navigation/server/map/GBitmap;
+    new-array v1, v1, [Lcom/autonavi/wh/navigation/server/map/GBitmap;
 
     move v0, v2
 
     :goto_3
     if-ge v0, v8, :cond_b
 
-    iget-object v5, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v5, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-virtual {v5, v0, v1, v3}, Lcom/autonavi/xm/navigation/engine/a;->a(I[Lcom/autonavi/xm/navigation/server/map/GBitmap;[Lcom/autonavi/xm/navigation/server/map/GBitmap;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v5, v0, v1, v3}, Lcom/autonavi/wh/navigation/engine/a;->a(I[Lcom/autonavi/wh/navigation/server/map/GBitmap;[Lcom/autonavi/wh/navigation/server/map/GBitmap;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     new-instance v5, Lcom/autonavi/navigation/api/settings/model/MyLocationIcon;
 
@@ -2106,7 +2106,7 @@
 
     aget-object v7, v1, v2
 
-    invoke-static {v7}, Lcom/autonavi/navigation/api/internal/a/a/b;->a(Lcom/autonavi/xm/navigation/server/map/GBitmap;)Landroid/graphics/Bitmap;
+    invoke-static {v7}, Lcom/autonavi/navigation/api/internal/a/a/b;->a(Lcom/autonavi/wh/navigation/server/map/GBitmap;)Landroid/graphics/Bitmap;
 
     move-result-object v7
 
@@ -2136,19 +2136,19 @@
 
     const/4 v0, 0x1
 
-    new-array v0, v0, [Lcom/autonavi/xm/navigation/server/GSize;
+    new-array v0, v0, [Lcom/autonavi/wh/navigation/server/GSize;
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/xm/navigation/server/GParam;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/wh/navigation/server/GParam;
 
     move-result-object v2
 
-    invoke-virtual {v1, v2, v0}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;[Lcom/autonavi/xm/navigation/server/GSize;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1, v2, v0}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;[Lcom/autonavi/wh/navigation/server/GSize;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v2, :cond_0
 
@@ -2158,9 +2158,9 @@
 
     new-instance p2, Lcom/autonavi/navigation/api/settings/model/Size;
 
-    iget v1, v0, Lcom/autonavi/xm/navigation/server/GSize;->cx:I
+    iget v1, v0, Lcom/autonavi/wh/navigation/server/GSize;->cx:I
 
-    iget v0, v0, Lcom/autonavi/xm/navigation/server/GSize;->cy:I
+    iget v0, v0, Lcom/autonavi/wh/navigation/server/GSize;->cy:I
 
     invoke-direct {p2, v1, v0}, Lcom/autonavi/navigation/api/settings/model/Size;-><init>(II)V
 
@@ -2188,7 +2188,7 @@
     return p2
 
     :cond_1
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/xm/navigation/server/GParam;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/settings/a/c;->b(Ljava/lang/String;)Lcom/autonavi/wh/navigation/server/GParam;
 
     move-result-object v1
 
@@ -2209,13 +2209,13 @@
 
     new-array v2, v2, [Z
 
-    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v3, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-virtual {v3, v1, v2}, Lcom/autonavi/xm/navigation/engine/a;->a(Lcom/autonavi/xm/navigation/server/GParam;[Z)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v3, v1, v2}, Lcom/autonavi/wh/navigation/engine/a;->a(Lcom/autonavi/wh/navigation/server/GParam;[Z)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v3, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v3, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v3, :cond_0
 
@@ -2227,9 +2227,9 @@
 .method public e()Z
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/xm/navigation/engine/a;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/settings/a/c;->b:Lcom/autonavi/wh/navigation/engine/a;
 
-    invoke-virtual {v0}, Lcom/autonavi/xm/navigation/engine/a;->c()Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0}, Lcom/autonavi/wh/navigation/engine/a;->c()Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
@@ -2239,7 +2239,7 @@
 
     if-eqz v1, :cond_0
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v1, :cond_0
 

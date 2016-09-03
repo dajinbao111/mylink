@@ -10,7 +10,7 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    invoke-static {}, Lcom/autonavi/xm/navigation/server/poi/GAdareaType;->values()[Lcom/autonavi/xm/navigation/server/poi/GAdareaType;
+    invoke-static {}, Lcom/autonavi/wh/navigation/server/poi/GAdareaType;->values()[Lcom/autonavi/wh/navigation/server/poi/GAdareaType;
 
     move-result-object v0
 
@@ -23,9 +23,9 @@
     :try_start_0
     sget-object v0, Lcom/autonavi/navigation/api/data/a/c$1;->a:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/poi/GAdareaType;->ADAREA_TYPE_CHINA:Lcom/autonavi/xm/navigation/server/poi/GAdareaType;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/poi/GAdareaType;->ADAREA_TYPE_CHINA:Lcom/autonavi/wh/navigation/server/poi/GAdareaType;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/poi/GAdareaType;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/poi/GAdareaType;->ordinal()I
 
     move-result v1
 
@@ -39,9 +39,9 @@
     :try_start_1
     sget-object v0, Lcom/autonavi/navigation/api/data/a/c$1;->a:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/poi/GAdareaType;->ADAREA_TYPE_PROVINCE:Lcom/autonavi/xm/navigation/server/poi/GAdareaType;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/poi/GAdareaType;->ADAREA_TYPE_PROVINCE:Lcom/autonavi/wh/navigation/server/poi/GAdareaType;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/poi/GAdareaType;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/poi/GAdareaType;->ordinal()I
 
     move-result v1
 
@@ -55,9 +55,9 @@
     :try_start_2
     sget-object v0, Lcom/autonavi/navigation/api/data/a/c$1;->a:[I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/poi/GAdareaType;->ADAREA_TYPE_CITY:Lcom/autonavi/xm/navigation/server/poi/GAdareaType;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/poi/GAdareaType;->ADAREA_TYPE_CITY:Lcom/autonavi/wh/navigation/server/poi/GAdareaType;
 
-    invoke-virtual {v1}, Lcom/autonavi/xm/navigation/server/poi/GAdareaType;->ordinal()I
+    invoke-virtual {v1}, Lcom/autonavi/wh/navigation/server/poi/GAdareaType;->ordinal()I
 
     move-result v1
 

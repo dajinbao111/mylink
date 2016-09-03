@@ -22,18 +22,18 @@
 
 
 # virtual methods
-.method public a(ILcom/autonavi/xm/navigation/server/GStatus;[Lcom/autonavi/xm/navigation/server/guide/GHGuideRoute;)V
+.method public a(ILcom/autonavi/wh/navigation/server/GStatus;[Lcom/autonavi/wh/navigation/server/guide/GHGuideRoute;)V
     .locals 5
 
     const/4 v4, 0x0
 
     iget-object v0, p0, Lcom/autonavi/navigation/api/route/a/e$5;->a:Lcom/autonavi/navigation/api/route/a/e;
 
-    invoke-static {v0}, Lcom/autonavi/navigation/api/route/a/e;->a(Lcom/autonavi/navigation/api/route/a/e;)Lcom/autonavi/xm/navigation/engine/GDBL_Guide;
+    invoke-static {v0}, Lcom/autonavi/navigation/api/route/a/e;->a(Lcom/autonavi/navigation/api/route/a/e;)Lcom/autonavi/wh/navigation/engine/GDBL_Guide;
 
     move-result-object v0
 
-    invoke-static {v0, p2, p3, v4}, Lcom/autonavi/navigation/api/guide/a/b;->a(Lcom/autonavi/xm/navigation/engine/GDBL_Guide;Lcom/autonavi/xm/navigation/server/GStatus;[Lcom/autonavi/xm/navigation/server/guide/GHGuideRoute;Lcom/autonavi/navigation/api/route/model/CalculationInput;)Lcom/autonavi/navigation/api/route/model/CalculationResult;
+    invoke-static {v0, p2, p3, v4}, Lcom/autonavi/navigation/api/guide/a/b;->a(Lcom/autonavi/wh/navigation/engine/GDBL_Guide;Lcom/autonavi/wh/navigation/server/GStatus;[Lcom/autonavi/wh/navigation/server/guide/GHGuideRoute;Lcom/autonavi/navigation/api/route/model/CalculationInput;)Lcom/autonavi/navigation/api/route/model/CalculationResult;
 
     move-result-object v1
 

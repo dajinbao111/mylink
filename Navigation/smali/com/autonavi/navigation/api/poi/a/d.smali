@@ -2,11 +2,11 @@
 .super Lcom/autonavi/navigation/api/poi/a/a;
 
 # interfaces
-.implements Lcom/autonavi/xm/navigation/engine/i$a;
+.implements Lcom/autonavi/wh/navigation/engine/i$a;
 
 
 # instance fields
-.field private final c:Lcom/autonavi/xm/navigation/engine/i;
+.field private final c:Lcom/autonavi/wh/navigation/engine/i;
 
 .field private d:Lcom/autonavi/navigation/api/poi/PoiManager$DealerQueryResult;
 
@@ -31,15 +31,15 @@
 
     iput-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->e:Landroid/os/Handler;
 
-    invoke-static {}, Lcom/autonavi/xm/navigation/engine/i;->a()Lcom/autonavi/xm/navigation/engine/i;
+    invoke-static {}, Lcom/autonavi/wh/navigation/engine/i;->a()Lcom/autonavi/wh/navigation/engine/i;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iput-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v0, p0}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/engine/i$a;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, p0}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/engine/i$a;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     new-instance v0, Ljava/util/LinkedList;
 
@@ -66,7 +66,7 @@
     return-void
 .end method
 
-.method private a(Lcom/autonavi/xm/navigation/server/poi/GPoiCategory;)Lcom/autonavi/navigation/api/poi/model/PoiCategory;
+.method private a(Lcom/autonavi/wh/navigation/server/poi/GPoiCategory;)Lcom/autonavi/navigation/api/poi/model/PoiCategory;
     .locals 5
 
     const/4 v0, 0x0
@@ -79,13 +79,13 @@
     :cond_0
     new-instance v1, Lcom/autonavi/navigation/api/poi/model/PoiCategory;
 
-    iget v2, p1, Lcom/autonavi/xm/navigation/server/poi/GPoiCategory;->lCategoryID:I
+    iget v2, p1, Lcom/autonavi/wh/navigation/server/poi/GPoiCategory;->lCategoryID:I
 
-    iget-object v3, p1, Lcom/autonavi/xm/navigation/server/poi/GPoiCategory;->szName:Ljava/lang/String;
+    iget-object v3, p1, Lcom/autonavi/wh/navigation/server/poi/GPoiCategory;->szName:Ljava/lang/String;
 
-    iget-object v4, p1, Lcom/autonavi/xm/navigation/server/poi/GPoiCategory;->pSubCategory:[Lcom/autonavi/xm/navigation/server/poi/GPoiCategory;
+    iget-object v4, p1, Lcom/autonavi/wh/navigation/server/poi/GPoiCategory;->pSubCategory:[Lcom/autonavi/wh/navigation/server/poi/GPoiCategory;
 
-    invoke-direct {p0, v4}, Lcom/autonavi/navigation/api/poi/a/d;->a([Lcom/autonavi/xm/navigation/server/poi/GPoiCategory;)Ljava/util/List;
+    invoke-direct {p0, v4}, Lcom/autonavi/navigation/api/poi/a/d;->a([Lcom/autonavi/wh/navigation/server/poi/GPoiCategory;)Ljava/util/List;
 
     move-result-object v4
 
@@ -104,7 +104,7 @@
     return-object v0
 .end method
 
-.method private a([Lcom/autonavi/xm/navigation/server/poi/GPoiCategory;)Ljava/util/List;
+.method private a([Lcom/autonavi/wh/navigation/server/poi/GPoiCategory;)Ljava/util/List;
     .locals 4
 
     if-nez p1, :cond_1
@@ -128,7 +128,7 @@
 
     aget-object v3, p1, v1
 
-    invoke-direct {p0, v3}, Lcom/autonavi/navigation/api/poi/a/d;->a(Lcom/autonavi/xm/navigation/server/poi/GPoiCategory;)Lcom/autonavi/navigation/api/poi/model/PoiCategory;
+    invoke-direct {p0, v3}, Lcom/autonavi/navigation/api/poi/a/d;->a(Lcom/autonavi/wh/navigation/server/poi/GPoiCategory;)Lcom/autonavi/navigation/api/poi/model/PoiCategory;
 
     move-result-object v3
 
@@ -139,20 +139,20 @@
     goto :goto_0
 .end method
 
-.method private b(Lcom/autonavi/navigation/api/poi/PoiManager$DealerQuery;)Lcom/autonavi/xm/navigation/server/poi/G4SSearchCondition;
+.method private b(Lcom/autonavi/navigation/api/poi/PoiManager$DealerQuery;)Lcom/autonavi/wh/navigation/server/poi/G4SSearchCondition;
     .locals 4
 
     const/4 v2, 0x0
 
-    new-instance v0, Lcom/autonavi/xm/navigation/server/poi/G4SSearchCondition;
+    new-instance v0, Lcom/autonavi/wh/navigation/server/poi/G4SSearchCondition;
 
-    invoke-direct {v0}, Lcom/autonavi/xm/navigation/server/poi/G4SSearchCondition;-><init>()V
+    invoke-direct {v0}, Lcom/autonavi/wh/navigation/server/poi/G4SSearchCondition;-><init>()V
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$DealerQuery;->getAdminCode()I
 
     move-result v1
 
-    iput v1, v0, Lcom/autonavi/xm/navigation/server/poi/G4SSearchCondition;->nAdminCode:I
+    iput v1, v0, Lcom/autonavi/wh/navigation/server/poi/G4SSearchCondition;->nAdminCode:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$DealerQuery;->getCenterPoint()Lcom/autonavi/navigation/api/map/model/LatLng;
 
@@ -160,28 +160,28 @@
 
     if-eqz v1, :cond_1
 
-    new-instance v2, Lcom/autonavi/xm/navigation/server/GCoord;
+    new-instance v2, Lcom/autonavi/wh/navigation/server/GCoord;
 
     iget v3, v1, Lcom/autonavi/navigation/api/map/model/LatLng;->longitude:I
 
     iget v1, v1, Lcom/autonavi/navigation/api/map/model/LatLng;->latitude:I
 
-    invoke-direct {v2, v3, v1}, Lcom/autonavi/xm/navigation/server/GCoord;-><init>(II)V
+    invoke-direct {v2, v3, v1}, Lcom/autonavi/wh/navigation/server/GCoord;-><init>(II)V
 
-    iput-object v2, v0, Lcom/autonavi/xm/navigation/server/poi/G4SSearchCondition;->Coord:Lcom/autonavi/xm/navigation/server/GCoord;
+    iput-object v2, v0, Lcom/autonavi/wh/navigation/server/poi/G4SSearchCondition;->Coord:Lcom/autonavi/wh/navigation/server/GCoord;
 
     :goto_0
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$DealerQuery;->getRadius()I
 
     move-result v1
 
-    iput v1, v0, Lcom/autonavi/xm/navigation/server/poi/G4SSearchCondition;->nAroundRange:I
+    iput v1, v0, Lcom/autonavi/wh/navigation/server/poi/G4SSearchCondition;->nAroundRange:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$DealerQuery;->getMotorCategory()I
 
     move-result v1
 
-    iput v1, v0, Lcom/autonavi/xm/navigation/server/poi/G4SSearchCondition;->eMotorType:I
+    iput v1, v0, Lcom/autonavi/wh/navigation/server/poi/G4SSearchCondition;->eMotorType:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$DealerQuery;->getQueryString()Ljava/lang/String;
 
@@ -197,31 +197,31 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lcom/autonavi/xm/navigation/server/poi/G4SSearchCondition;->szKeyword:Ljava/lang/String;
+    iput-object v1, v0, Lcom/autonavi/wh/navigation/server/poi/G4SSearchCondition;->szKeyword:Ljava/lang/String;
 
     :cond_0
     return-object v0
 
     :cond_1
-    new-instance v1, Lcom/autonavi/xm/navigation/server/GCoord;
+    new-instance v1, Lcom/autonavi/wh/navigation/server/GCoord;
 
-    invoke-direct {v1, v2, v2}, Lcom/autonavi/xm/navigation/server/GCoord;-><init>(II)V
+    invoke-direct {v1, v2, v2}, Lcom/autonavi/wh/navigation/server/GCoord;-><init>(II)V
 
-    iput-object v1, v0, Lcom/autonavi/xm/navigation/server/poi/G4SSearchCondition;->Coord:Lcom/autonavi/xm/navigation/server/GCoord;
+    iput-object v1, v0, Lcom/autonavi/wh/navigation/server/poi/G4SSearchCondition;->Coord:Lcom/autonavi/wh/navigation/server/GCoord;
 
     goto :goto_0
 .end method
 
-.method private b(I)Lcom/autonavi/xm/navigation/server/poi/GAdareaType;
+.method private b(I)Lcom/autonavi/wh/navigation/server/poi/GAdareaType;
     .locals 2
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/poi/GAdareaType;->ADAREA_TYPE_CHINA:Lcom/autonavi/xm/navigation/server/poi/GAdareaType;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/poi/GAdareaType;->ADAREA_TYPE_CHINA:Lcom/autonavi/wh/navigation/server/poi/GAdareaType;
 
     const/16 v1, 0x2710
 
     if-ge p1, v1, :cond_1
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/poi/GAdareaType;->ADAREA_TYPE_CHINA:Lcom/autonavi/xm/navigation/server/poi/GAdareaType;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/poi/GAdareaType;->ADAREA_TYPE_CHINA:Lcom/autonavi/wh/navigation/server/poi/GAdareaType;
 
     :cond_0
     :goto_0
@@ -232,7 +232,7 @@
 
     if-nez v1, :cond_2
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/poi/GAdareaType;->ADAREA_TYPE_PROVINCE:Lcom/autonavi/xm/navigation/server/poi/GAdareaType;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/poi/GAdareaType;->ADAREA_TYPE_PROVINCE:Lcom/autonavi/wh/navigation/server/poi/GAdareaType;
 
     goto :goto_0
 
@@ -245,7 +245,7 @@
 
     if-nez v1, :cond_3
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/poi/GAdareaType;->ADAREA_TYPE_CITY:Lcom/autonavi/xm/navigation/server/poi/GAdareaType;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/poi/GAdareaType;->ADAREA_TYPE_CITY:Lcom/autonavi/wh/navigation/server/poi/GAdareaType;
 
     goto :goto_0
 
@@ -254,7 +254,7 @@
 
     if-eqz v1, :cond_0
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/poi/GAdareaType;->ADAREA_TYPE_TOWN:Lcom/autonavi/xm/navigation/server/poi/GAdareaType;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/poi/GAdareaType;->ADAREA_TYPE_TOWN:Lcom/autonavi/wh/navigation/server/poi/GAdareaType;
 
     goto :goto_0
 .end method
@@ -275,16 +275,16 @@
     return-object v0
 .end method
 
-.method private c(Lcom/autonavi/navigation/api/poi/PoiManager$AddressQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+.method private c(Lcom/autonavi/navigation/api/poi/PoiManager$AddressQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
     .locals 4
 
-    new-instance v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    new-instance v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
-    invoke-direct {v1}, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;-><init>()V
+    invoke-direct {v1}, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;-><init>()V
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/poi/GSearchType;->GSEARCH_TYPE_ADDRESS:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/poi/GSearchType;->GSEARCH_TYPE_ADDRESS:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$AddressQuery;->getQueryString()Ljava/lang/String;
 
@@ -294,7 +294,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -321,7 +321,7 @@
     throw v0
 
     :cond_0
-    iput v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->lCategoryID:I
+    iput v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->lCategoryID:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$AddressQuery;->getAdminCode()I
 
@@ -335,15 +335,15 @@
 
     if-eqz v0, :cond_1
 
-    new-instance v2, Lcom/autonavi/xm/navigation/server/GCoord;
+    new-instance v2, Lcom/autonavi/wh/navigation/server/GCoord;
 
     iget v3, v0, Lcom/autonavi/navigation/api/map/model/LatLng;->longitude:I
 
     iget v0, v0, Lcom/autonavi/navigation/api/map/model/LatLng;->latitude:I
 
-    invoke-direct {v2, v3, v0}, Lcom/autonavi/xm/navigation/server/GCoord;-><init>(II)V
+    invoke-direct {v2, v3, v0}, Lcom/autonavi/wh/navigation/server/GCoord;-><init>(II)V
 
-    iput-object v2, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->Coord:Lcom/autonavi/xm/navigation/server/GCoord;
+    iput-object v2, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->Coord:Lcom/autonavi/wh/navigation/server/GCoord;
 
     :cond_1
     iput-object p1, p0, Lcom/autonavi/navigation/api/poi/a/d;->a:Lcom/autonavi/navigation/api/poi/PoiManager$Query;
@@ -351,36 +351,36 @@
     return-object v1
 .end method
 
-.method private c(Lcom/autonavi/navigation/api/poi/PoiManager$AroundQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+.method private c(Lcom/autonavi/navigation/api/poi/PoiManager$AroundQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
     .locals 4
 
-    new-instance v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    new-instance v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
-    invoke-direct {v1}, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;-><init>()V
+    invoke-direct {v1}, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;-><init>()V
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/poi/GSearchType;->GSEARCH_TYPE_AROUND:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/poi/GSearchType;->GSEARCH_TYPE_AROUND:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$AroundQuery;->getCenterPoint()Lcom/autonavi/navigation/api/map/model/LatLng;
 
     move-result-object v0
 
-    new-instance v2, Lcom/autonavi/xm/navigation/server/GCoord;
+    new-instance v2, Lcom/autonavi/wh/navigation/server/GCoord;
 
     iget v3, v0, Lcom/autonavi/navigation/api/map/model/LatLng;->longitude:I
 
     iget v0, v0, Lcom/autonavi/navigation/api/map/model/LatLng;->latitude:I
 
-    invoke-direct {v2, v3, v0}, Lcom/autonavi/xm/navigation/server/GCoord;-><init>(II)V
+    invoke-direct {v2, v3, v0}, Lcom/autonavi/wh/navigation/server/GCoord;-><init>(II)V
 
-    iput-object v2, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->Coord:Lcom/autonavi/xm/navigation/server/GCoord;
+    iput-object v2, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->Coord:Lcom/autonavi/wh/navigation/server/GCoord;
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$AroundQuery;->getRadius()I
 
     move-result v0
 
-    iput v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->lAroundRange:I
+    iput v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->lAroundRange:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$AroundQuery;->getQueryString()Ljava/lang/String;
 
@@ -396,7 +396,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
 
     :cond_0
     const/4 v0, 0x0
@@ -424,7 +424,7 @@
     throw v0
 
     :cond_1
-    iput v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->lCategoryID:I
+    iput v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->lCategoryID:I
 
     iput-object p1, p0, Lcom/autonavi/navigation/api/poi/a/d;->a:Lcom/autonavi/navigation/api/poi/PoiManager$Query;
 
@@ -437,16 +437,16 @@
     return-object v1
 .end method
 
-.method private c(Lcom/autonavi/navigation/api/poi/PoiManager$CategoryQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+.method private c(Lcom/autonavi/navigation/api/poi/PoiManager$CategoryQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
     .locals 3
 
-    new-instance v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    new-instance v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
-    invoke-direct {v1}, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;-><init>()V
+    invoke-direct {v1}, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;-><init>()V
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/poi/GSearchType;->GSEARCH_TYPE_CATEGORY:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/poi/GSearchType;->GSEARCH_TYPE_CATEGORY:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
     const/4 v0, 0x0
 
@@ -473,7 +473,7 @@
     throw v0
 
     :cond_0
-    iput v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->lCategoryID:I
+    iput v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->lCategoryID:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$CategoryQuery;->getQueryString()Ljava/lang/String;
 
@@ -489,7 +489,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
 
     :cond_1
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$CategoryQuery;->getAdminCode()I
@@ -503,16 +503,16 @@
     return-object v1
 .end method
 
-.method private c(Lcom/autonavi/navigation/api/poi/PoiManager$CrossingQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+.method private c(Lcom/autonavi/navigation/api/poi/PoiManager$CrossingQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
     .locals 4
 
-    new-instance v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    new-instance v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
-    invoke-direct {v1}, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;-><init>()V
+    invoke-direct {v1}, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;-><init>()V
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/poi/GSearchType;->GSEARCH_TYPE_CROSS:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/poi/GSearchType;->GSEARCH_TYPE_CROSS:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$CrossingQuery;->getQueryString()Ljava/lang/String;
 
@@ -522,7 +522,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -549,7 +549,7 @@
     throw v0
 
     :cond_0
-    iput v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->lCategoryID:I
+    iput v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->lCategoryID:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$CrossingQuery;->getAdminCode()I
 
@@ -563,15 +563,15 @@
 
     if-eqz v0, :cond_1
 
-    new-instance v2, Lcom/autonavi/xm/navigation/server/GCoord;
+    new-instance v2, Lcom/autonavi/wh/navigation/server/GCoord;
 
     iget v3, v0, Lcom/autonavi/navigation/api/map/model/LatLng;->longitude:I
 
     iget v0, v0, Lcom/autonavi/navigation/api/map/model/LatLng;->latitude:I
 
-    invoke-direct {v2, v3, v0}, Lcom/autonavi/xm/navigation/server/GCoord;-><init>(II)V
+    invoke-direct {v2, v3, v0}, Lcom/autonavi/wh/navigation/server/GCoord;-><init>(II)V
 
-    iput-object v2, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->Coord:Lcom/autonavi/xm/navigation/server/GCoord;
+    iput-object v2, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->Coord:Lcom/autonavi/wh/navigation/server/GCoord;
 
     :cond_1
     iput-object p1, p0, Lcom/autonavi/navigation/api/poi/a/d;->a:Lcom/autonavi/navigation/api/poi/PoiManager$Query;
@@ -579,16 +579,16 @@
     return-object v1
 .end method
 
-.method private c(Lcom/autonavi/navigation/api/poi/PoiManager$NameQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+.method private c(Lcom/autonavi/navigation/api/poi/PoiManager$NameQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
     .locals 4
 
-    new-instance v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    new-instance v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
-    invoke-direct {v1}, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;-><init>()V
+    invoke-direct {v1}, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;-><init>()V
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/poi/GSearchType;->GSEARCH_TYPE_NAME:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/poi/GSearchType;->GSEARCH_TYPE_NAME:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$NameQuery;->getQueryString()Ljava/lang/String;
 
@@ -598,7 +598,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -625,7 +625,7 @@
     throw v0
 
     :cond_0
-    iput v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->lCategoryID:I
+    iput v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->lCategoryID:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$NameQuery;->getAdminCode()I
 
@@ -639,15 +639,15 @@
 
     if-eqz v0, :cond_1
 
-    new-instance v2, Lcom/autonavi/xm/navigation/server/GCoord;
+    new-instance v2, Lcom/autonavi/wh/navigation/server/GCoord;
 
     iget v3, v0, Lcom/autonavi/navigation/api/map/model/LatLng;->longitude:I
 
     iget v0, v0, Lcom/autonavi/navigation/api/map/model/LatLng;->latitude:I
 
-    invoke-direct {v2, v3, v0}, Lcom/autonavi/xm/navigation/server/GCoord;-><init>(II)V
+    invoke-direct {v2, v3, v0}, Lcom/autonavi/wh/navigation/server/GCoord;-><init>(II)V
 
-    iput-object v2, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->Coord:Lcom/autonavi/xm/navigation/server/GCoord;
+    iput-object v2, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->Coord:Lcom/autonavi/wh/navigation/server/GCoord;
 
     :cond_1
     iput-object p1, p0, Lcom/autonavi/navigation/api/poi/a/d;->a:Lcom/autonavi/navigation/api/poi/PoiManager$Query;
@@ -655,16 +655,16 @@
     return-object v1
 .end method
 
-.method private c(Lcom/autonavi/navigation/api/poi/PoiManager$TelQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+.method private c(Lcom/autonavi/navigation/api/poi/PoiManager$TelQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
     .locals 4
 
-    new-instance v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    new-instance v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
-    invoke-direct {v1}, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;-><init>()V
+    invoke-direct {v1}, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;-><init>()V
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/poi/GSearchType;->GSEARCH_TYPE_TEL:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/poi/GSearchType;->GSEARCH_TYPE_TEL:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$TelQuery;->getQueryString()Ljava/lang/String;
 
@@ -674,7 +674,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -701,7 +701,7 @@
     throw v0
 
     :cond_0
-    iput v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->lCategoryID:I
+    iput v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->lCategoryID:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$TelQuery;->getAdminCode()I
 
@@ -715,15 +715,15 @@
 
     if-eqz v0, :cond_1
 
-    new-instance v2, Lcom/autonavi/xm/navigation/server/GCoord;
+    new-instance v2, Lcom/autonavi/wh/navigation/server/GCoord;
 
     iget v3, v0, Lcom/autonavi/navigation/api/map/model/LatLng;->longitude:I
 
     iget v0, v0, Lcom/autonavi/navigation/api/map/model/LatLng;->latitude:I
 
-    invoke-direct {v2, v3, v0}, Lcom/autonavi/xm/navigation/server/GCoord;-><init>(II)V
+    invoke-direct {v2, v3, v0}, Lcom/autonavi/wh/navigation/server/GCoord;-><init>(II)V
 
-    iput-object v2, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->Coord:Lcom/autonavi/xm/navigation/server/GCoord;
+    iput-object v2, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->Coord:Lcom/autonavi/wh/navigation/server/GCoord;
 
     :cond_1
     iput-object p1, p0, Lcom/autonavi/navigation/api/poi/a/d;->a:Lcom/autonavi/navigation/api/poi/PoiManager$Query;
@@ -734,17 +734,17 @@
 .method private c(I)Z
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->b(I)Lcom/autonavi/xm/navigation/server/poi/GAdareaType;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->b(I)Lcom/autonavi/wh/navigation/server/poi/GAdareaType;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, p1}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/GAdareaType;I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1, p1}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/GAdareaType;I)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v1, :cond_0
 
@@ -766,15 +766,15 @@
 
     const/4 v0, 0x1
 
-    new-array v0, v0, [Lcom/autonavi/xm/navigation/server/poi/GPoiCategoryList;
+    new-array v0, v0, [Lcom/autonavi/wh/navigation/server/poi/GPoiCategoryList;
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v1, p1, v0}, Lcom/autonavi/xm/navigation/engine/i;->a(I[Lcom/autonavi/xm/navigation/server/poi/GPoiCategoryList;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1, p1, v0}, Lcom/autonavi/wh/navigation/engine/i;->a(I[Lcom/autonavi/wh/navigation/server/poi/GPoiCategoryList;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v2, :cond_0
 
@@ -782,9 +782,9 @@
 
     aget-object v0, v0, v1
 
-    iget-object v0, v0, Lcom/autonavi/xm/navigation/server/poi/GPoiCategoryList;->pCategory:[Lcom/autonavi/xm/navigation/server/poi/GPoiCategory;
+    iget-object v0, v0, Lcom/autonavi/wh/navigation/server/poi/GPoiCategoryList;->pCategory:[Lcom/autonavi/wh/navigation/server/poi/GPoiCategory;
 
-    invoke-direct {p0, v0}, Lcom/autonavi/navigation/api/poi/a/d;->a([Lcom/autonavi/xm/navigation/server/poi/GPoiCategory;)Ljava/util/List;
+    invoke-direct {p0, v0}, Lcom/autonavi/navigation/api/poi/a/d;->a([Lcom/autonavi/wh/navigation/server/poi/GPoiCategory;)Ljava/util/List;
 
     move-result-object v0
 
@@ -806,47 +806,47 @@
 
     const/4 v1, 0x0
 
-    new-instance v0, Lcom/autonavi/xm/navigation/server/poi/GCandidateCondition;
+    new-instance v0, Lcom/autonavi/wh/navigation/server/poi/GCandidateCondition;
 
-    invoke-direct {v0}, Lcom/autonavi/xm/navigation/server/poi/GCandidateCondition;-><init>()V
+    invoke-direct {v0}, Lcom/autonavi/wh/navigation/server/poi/GCandidateCondition;-><init>()V
 
-    iput-object p1, v0, Lcom/autonavi/xm/navigation/server/poi/GCandidateCondition;->szKeyword:Ljava/lang/String;
+    iput-object p1, v0, Lcom/autonavi/wh/navigation/server/poi/GCandidateCondition;->szKeyword:Ljava/lang/String;
 
-    invoke-static {p3}, Lcom/autonavi/xm/navigation/server/poi/GCandidateType;->valueOf(I)Lcom/autonavi/xm/navigation/server/poi/GCandidateType;
+    invoke-static {p3}, Lcom/autonavi/wh/navigation/server/poi/GCandidateType;->valueOf(I)Lcom/autonavi/wh/navigation/server/poi/GCandidateType;
 
     move-result-object v2
 
-    iput-object v2, v0, Lcom/autonavi/xm/navigation/server/poi/GCandidateCondition;->eCandidateType:Lcom/autonavi/xm/navigation/server/poi/GCandidateType;
+    iput-object v2, v0, Lcom/autonavi/wh/navigation/server/poi/GCandidateCondition;->eCandidateType:Lcom/autonavi/wh/navigation/server/poi/GCandidateType;
 
-    new-array v2, v10, [Lcom/autonavi/xm/navigation/server/poi/GCandidateList;
+    new-array v2, v10, [Lcom/autonavi/wh/navigation/server/poi/GCandidateList;
 
-    iget-object v3, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v3, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p2}, Lcom/autonavi/navigation/api/poi/a/d;->b(I)Lcom/autonavi/xm/navigation/server/poi/GAdareaType;
+    invoke-direct {p0, p2}, Lcom/autonavi/navigation/api/poi/a/d;->b(I)Lcom/autonavi/wh/navigation/server/poi/GAdareaType;
 
     move-result-object v4
 
-    invoke-virtual {v3, v4, p2}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/GAdareaType;I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v3, v4, p2}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/GAdareaType;I)Lcom/autonavi/wh/navigation/server/GStatus;
 
-    iget-object v3, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v3, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v3, v0, v2}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/GCandidateCondition;[Lcom/autonavi/xm/navigation/server/poi/GCandidateList;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v3, v0, v2}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/GCandidateCondition;[Lcom/autonavi/wh/navigation/server/poi/GCandidateList;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v3, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v3, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v3, :cond_1
 
     aget-object v3, v2, v1
 
-    iget-short v4, v3, Lcom/autonavi/xm/navigation/server/poi/GCandidateList;->NumberOfCandidate:S
+    iget-short v4, v3, Lcom/autonavi/wh/navigation/server/poi/GCandidateList;->NumberOfCandidate:S
 
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, v4}, Ljava/util/ArrayList;-><init>(I)V
 
-    iget-byte v2, v3, Lcom/autonavi/xm/navigation/server/poi/GCandidateList;->Flag:B
+    iget-byte v2, v3, Lcom/autonavi/wh/navigation/server/poi/GCandidateList;->Flag:B
 
     if-nez v2, :cond_0
 
@@ -883,11 +883,11 @@
     :goto_0
     if-ge v2, v4, :cond_2
 
-    iget-object v8, v3, Lcom/autonavi/xm/navigation/server/poi/GCandidateList;->pCandidateChar:[Lcom/autonavi/xm/navigation/server/poi/GCandidateChar;
+    iget-object v8, v3, Lcom/autonavi/wh/navigation/server/poi/GCandidateList;->pCandidateChar:[Lcom/autonavi/wh/navigation/server/poi/GCandidateChar;
 
     aget-object v8, v8, v2
 
-    iget-short v8, v8, Lcom/autonavi/xm/navigation/server/poi/GCandidateChar;->wCharCode:S
+    iget-short v8, v8, Lcom/autonavi/wh/navigation/server/poi/GCandidateChar;->wCharCode:S
 
     invoke-virtual {v5, v8}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
@@ -917,11 +917,11 @@
     :goto_1
     if-ge v1, v4, :cond_2
 
-    iget-object v2, v3, Lcom/autonavi/xm/navigation/server/poi/GCandidateList;->pCandidateWord:[Lcom/autonavi/xm/navigation/server/poi/GCandidateWord;
+    iget-object v2, v3, Lcom/autonavi/wh/navigation/server/poi/GCandidateList;->pCandidateWord:[Lcom/autonavi/wh/navigation/server/poi/GCandidateWord;
 
     aget-object v2, v2, v1
 
-    iget-object v2, v2, Lcom/autonavi/xm/navigation/server/poi/GCandidateWord;->szWord:Ljava/lang/String;
+    iget-object v2, v2, Lcom/autonavi/wh/navigation/server/poi/GCandidateWord;->szWord:Ljava/lang/String;
 
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -938,7 +938,7 @@
     return-object v0
 .end method
 
-.method public a(ILcom/autonavi/xm/navigation/server/GStatus;)V
+.method public a(ILcom/autonavi/wh/navigation/server/GStatus;)V
     .locals 8
 
     const/4 v7, 0x2
@@ -947,7 +947,7 @@
 
     const/4 v4, 0x0
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne p2, v0, :cond_8
 
@@ -971,25 +971,25 @@
     const/16 v1, 0x1f4
 
     :cond_1
-    new-array v2, v3, [Lcom/autonavi/xm/navigation/server/poi/GPoiResult;
+    new-array v2, v3, [Lcom/autonavi/wh/navigation/server/poi/GPoiResult;
 
-    iget-object v3, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v3, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    new-instance v5, Lcom/autonavi/xm/navigation/server/poi/GGetPoiInput;
+    new-instance v5, Lcom/autonavi/wh/navigation/server/poi/GGetPoiInput;
 
-    invoke-direct {v5, v4, v1}, Lcom/autonavi/xm/navigation/server/poi/GGetPoiInput;-><init>(SS)V
+    invoke-direct {v5, v4, v1}, Lcom/autonavi/wh/navigation/server/poi/GGetPoiInput;-><init>(SS)V
 
-    invoke-virtual {v3, v5, v2}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/GGetPoiInput;[Lcom/autonavi/xm/navigation/server/poi/GPoiResult;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v3, v5, v2}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/GGetPoiInput;[Lcom/autonavi/wh/navigation/server/poi/GPoiResult;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v3, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v3, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v3, :cond_4
 
     aget-object v1, v2, v4
 
-    iget-object v2, v1, Lcom/autonavi/xm/navigation/server/poi/GPoiResult;->pPOI:[Lcom/autonavi/xm/navigation/server/poi/GPoi;
+    iget-object v2, v1, Lcom/autonavi/wh/navigation/server/poi/GPoiResult;->pPOI:[Lcom/autonavi/wh/navigation/server/poi/GPoi;
 
     array-length v3, v2
 
@@ -1004,7 +1004,7 @@
 
     aget-object v6, v2, v1
 
-    invoke-static {v6}, Lcom/autonavi/navigation/api/poi/a/b;->a(Lcom/autonavi/xm/navigation/server/poi/GPoi;)Lcom/autonavi/navigation/api/poi/model/Poi;
+    invoke-static {v6}, Lcom/autonavi/navigation/api/poi/a/b;->a(Lcom/autonavi/wh/navigation/server/poi/GPoi;)Lcom/autonavi/navigation/api/poi/model/Poi;
 
     move-result-object v6
 
@@ -1109,15 +1109,15 @@
     :cond_5
     if-ne p1, v3, :cond_6
 
-    new-array v0, v3, [Lcom/autonavi/xm/navigation/server/poi/GPoi;
+    new-array v0, v3, [Lcom/autonavi/wh/navigation/server/poi/GPoi;
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v1, v0}, Lcom/autonavi/xm/navigation/engine/i;->a([Lcom/autonavi/xm/navigation/server/poi/GPoi;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1, v0}, Lcom/autonavi/wh/navigation/engine/i;->a([Lcom/autonavi/wh/navigation/server/poi/GPoi;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v2, :cond_4
 
@@ -1127,7 +1127,7 @@
 
     aget-object v0, v0, v4
 
-    invoke-static {v0}, Lcom/autonavi/navigation/api/poi/a/b;->a(Lcom/autonavi/xm/navigation/server/poi/GPoi;)Lcom/autonavi/navigation/api/poi/model/Poi;
+    invoke-static {v0}, Lcom/autonavi/navigation/api/poi/a/b;->a(Lcom/autonavi/wh/navigation/server/poi/GPoi;)Lcom/autonavi/navigation/api/poi/model/Poi;
 
     move-result-object v0
 
@@ -1150,13 +1150,13 @@
     goto :goto_3
 
     :cond_6
-    sget-object v0, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_NO_DATA:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_NO_DATA:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne p2, v0, :cond_7
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v0}, Lcom/autonavi/xm/navigation/engine/i;->c()Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0}, Lcom/autonavi/wh/navigation/engine/i;->c()Lcom/autonavi/wh/navigation/server/GStatus;
 
     iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->e:Landroid/os/Handler;
 
@@ -1169,9 +1169,9 @@
     goto :goto_3
 
     :cond_7
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v0}, Lcom/autonavi/xm/navigation/engine/i;->c()Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0}, Lcom/autonavi/wh/navigation/engine/i;->c()Lcom/autonavi/wh/navigation/server/GStatus;
 
     iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->e:Landroid/os/Handler;
 
@@ -1184,9 +1184,9 @@
     goto :goto_3
 
     :cond_8
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v0}, Lcom/autonavi/xm/navigation/engine/i;->c()Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0}, Lcom/autonavi/wh/navigation/engine/i;->c()Lcom/autonavi/wh/navigation/server/GStatus;
 
     iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->e:Landroid/os/Handler;
 
@@ -1207,13 +1207,13 @@
 .method public a(Lcom/autonavi/navigation/api/poi/PoiManager$AddressQuery;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$AddressQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$AddressQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     return-void
 .end method
@@ -1221,13 +1221,13 @@
 .method public a(Lcom/autonavi/navigation/api/poi/PoiManager$AroundQuery;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$AroundQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$AroundQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     return-void
 .end method
@@ -1235,13 +1235,13 @@
 .method public a(Lcom/autonavi/navigation/api/poi/PoiManager$CategoryQuery;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$CategoryQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$CategoryQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     return-void
 .end method
@@ -1249,13 +1249,13 @@
 .method public a(Lcom/autonavi/navigation/api/poi/PoiManager$CrossingQuery;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$CrossingQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$CrossingQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     return-void
 .end method
@@ -1265,23 +1265,23 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->b(Lcom/autonavi/navigation/api/poi/PoiManager$DealerQuery;)Lcom/autonavi/xm/navigation/server/poi/G4SSearchCondition;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->b(Lcom/autonavi/navigation/api/poi/PoiManager$DealerQuery;)Lcom/autonavi/wh/navigation/server/poi/G4SSearchCondition;
 
     move-result-object v0
 
     const/4 v2, 0x1
 
-    new-array v2, v2, [[Lcom/autonavi/xm/navigation/server/poi/G4SDealerInfo;
+    new-array v2, v2, [[Lcom/autonavi/wh/navigation/server/poi/G4SDealerInfo;
 
-    iget-object v3, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v3, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v3, v0, v2}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/G4SSearchCondition;[[Lcom/autonavi/xm/navigation/server/poi/G4SDealerInfo;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v3, v0, v2}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/G4SSearchCondition;[[Lcom/autonavi/wh/navigation/server/poi/G4SDealerInfo;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
     const/4 v3, 0x0
 
-    sget-object v4, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v4, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v4, :cond_1
 
@@ -1302,7 +1302,7 @@
 
     aget-object v4, v4, v0
 
-    invoke-static {v4}, Lcom/autonavi/navigation/api/poi/a/b;->a(Lcom/autonavi/xm/navigation/server/poi/G4SDealerInfo;)Lcom/autonavi/navigation/api/poi/model/DealerInfo;
+    invoke-static {v4}, Lcom/autonavi/navigation/api/poi/a/b;->a(Lcom/autonavi/wh/navigation/server/poi/G4SDealerInfo;)Lcom/autonavi/navigation/api/poi/model/DealerInfo;
 
     move-result-object v4
 
@@ -1345,13 +1345,13 @@
 .method public a(Lcom/autonavi/navigation/api/poi/PoiManager$NameQuery;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$NameQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$NameQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     return-void
 .end method
@@ -1363,17 +1363,17 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    new-instance v2, Lcom/autonavi/xm/navigation/server/GCoord;
+    new-instance v2, Lcom/autonavi/wh/navigation/server/GCoord;
 
     iget v3, v0, Lcom/autonavi/navigation/api/map/model/LatLng;->longitude:I
 
     iget v0, v0, Lcom/autonavi/navigation/api/map/model/LatLng;->latitude:I
 
-    invoke-direct {v2, v3, v0}, Lcom/autonavi/xm/navigation/server/GCoord;-><init>(II)V
+    invoke-direct {v2, v3, v0}, Lcom/autonavi/wh/navigation/server/GCoord;-><init>(II)V
 
-    invoke-virtual {v1, v2}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/GCoord;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1, v2}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/GCoord;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     iput-object p1, p0, Lcom/autonavi/navigation/api/poi/a/d;->a:Lcom/autonavi/navigation/api/poi/PoiManager$Query;
 
@@ -1449,19 +1449,19 @@
 .method public a(Lcom/autonavi/navigation/api/poi/PoiManager$RouteQuery;)V
     .locals 3
 
-    new-instance v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    new-instance v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
-    invoke-direct {v1}, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;-><init>()V
+    invoke-direct {v1}, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;-><init>()V
 
-    sget-object v0, Lcom/autonavi/xm/navigation/server/poi/GSearchType;->GSEARCH_TYPE_ROUTEPOI:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    sget-object v0, Lcom/autonavi/wh/navigation/server/poi/GSearchType;->GSEARCH_TYPE_ROUTEPOI:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$RouteQuery;->getRadius()I
 
     move-result v0
 
-    iput v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->lAroundRange:I
+    iput v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->lAroundRange:I
 
     invoke-virtual {p1}, Lcom/autonavi/navigation/api/poi/PoiManager$RouteQuery;->getQueryString()Ljava/lang/String;
 
@@ -1477,7 +1477,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
+    iput-object v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
 
     :cond_0
     const/4 v0, 0x0
@@ -1505,11 +1505,11 @@
     throw v0
 
     :cond_1
-    iput v0, v1, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->lCategoryID:I
+    iput v0, v1, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->lCategoryID:I
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     iput-object p1, p0, Lcom/autonavi/navigation/api/poi/a/d;->a:Lcom/autonavi/navigation/api/poi/PoiManager$Query;
 
@@ -1519,13 +1519,13 @@
 .method public a(Lcom/autonavi/navigation/api/poi/PoiManager$TelQuery;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$TelQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$TelQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     return-void
 .end method
@@ -1533,13 +1533,13 @@
 .method public a([I)Z
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v0, p1}, Lcom/autonavi/xm/navigation/engine/i;->a([I)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, p1}, Lcom/autonavi/wh/navigation/engine/i;->a([I)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v1, :cond_0
 
@@ -1561,7 +1561,7 @@
 
     array-length v0, p1
 
-    new-array v2, v0, [Lcom/autonavi/xm/navigation/server/poi/GDisplayPoiPriority;
+    new-array v2, v0, [Lcom/autonavi/wh/navigation/server/poi/GDisplayPoiPriority;
 
     move v0, v1
 
@@ -1572,7 +1572,7 @@
 
     aget-object v3, p1, v0
 
-    invoke-static {v3}, Lcom/autonavi/navigation/api/poi/a/b;->a(Lcom/autonavi/navigation/api/poi/model/DisplayPoiPriority;)Lcom/autonavi/xm/navigation/server/poi/GDisplayPoiPriority;
+    invoke-static {v3}, Lcom/autonavi/navigation/api/poi/a/b;->a(Lcom/autonavi/navigation/api/poi/model/DisplayPoiPriority;)Lcom/autonavi/wh/navigation/server/poi/GDisplayPoiPriority;
 
     move-result-object v3
 
@@ -1583,13 +1583,13 @@
     goto :goto_0
 
     :cond_0
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v0, v2}, Lcom/autonavi/xm/navigation/engine/i;->a([Lcom/autonavi/xm/navigation/server/poi/GDisplayPoiPriority;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v2}, Lcom/autonavi/wh/navigation/engine/i;->a([Lcom/autonavi/wh/navigation/server/poi/GDisplayPoiPriority;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v2, :cond_1
 
@@ -1604,15 +1604,15 @@
 
     const/4 v0, 0x1
 
-    new-array v0, v0, [Lcom/autonavi/xm/navigation/server/GVersion;
+    new-array v0, v0, [Lcom/autonavi/wh/navigation/server/GVersion;
 
-    iget-object v1, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v1, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v1, v0}, Lcom/autonavi/xm/navigation/engine/i;->a([Lcom/autonavi/xm/navigation/server/GVersion;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v1, v0}, Lcom/autonavi/wh/navigation/engine/i;->a([Lcom/autonavi/wh/navigation/server/GVersion;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v1
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v1, v2, :cond_0
 
@@ -1620,7 +1620,7 @@
 
     aget-object v0, v0, v1
 
-    iget-object v0, v0, Lcom/autonavi/xm/navigation/server/GVersion;->szVersion:Ljava/lang/String;
+    iget-object v0, v0, Lcom/autonavi/wh/navigation/server/GVersion;->szVersion:Ljava/lang/String;
 
     const-string v1, "[Vv ]"
 
@@ -1642,13 +1642,13 @@
 .method public b(Lcom/autonavi/navigation/api/poi/PoiManager$AddressQuery;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$AddressQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$AddressQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/i;->b(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/i;->b(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     return-void
 .end method
@@ -1656,13 +1656,13 @@
 .method public b(Lcom/autonavi/navigation/api/poi/PoiManager$AroundQuery;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$AroundQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$AroundQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/i;->b(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/i;->b(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     return-void
 .end method
@@ -1670,13 +1670,13 @@
 .method public b(Lcom/autonavi/navigation/api/poi/PoiManager$CategoryQuery;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$CategoryQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$CategoryQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/i;->b(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/i;->b(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     return-void
 .end method
@@ -1684,13 +1684,13 @@
 .method public b(Lcom/autonavi/navigation/api/poi/PoiManager$CrossingQuery;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$CrossingQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$CrossingQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     return-void
 .end method
@@ -1698,13 +1698,13 @@
 .method public b(Lcom/autonavi/navigation/api/poi/PoiManager$NameQuery;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$NameQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$NameQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/i;->b(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/i;->b(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     return-void
 .end method
@@ -1778,13 +1778,13 @@
 .method public b(Lcom/autonavi/navigation/api/poi/PoiManager$TelQuery;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$TelQuery;)Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    invoke-direct {p0, p1}, Lcom/autonavi/navigation/api/poi/a/d;->c(Lcom/autonavi/navigation/api/poi/PoiManager$TelQuery;)Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/autonavi/xm/navigation/engine/i;->b(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/engine/i;->b(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     return-void
 .end method
@@ -1794,27 +1794,27 @@
 
     const/4 v1, 0x0
 
-    new-instance v0, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;
+    new-instance v0, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;
 
-    invoke-direct {v0}, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;-><init>()V
+    invoke-direct {v0}, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;-><init>()V
 
-    iput-object p1, v0, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
+    iput-object p1, v0, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->szKeyword:Ljava/lang/String;
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/poi/GSearchType;->GSEARCH_TYPE_NAME:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/poi/GSearchType;->GSEARCH_TYPE_NAME:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
-    iput-object v2, v0, Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/xm/navigation/server/poi/GSearchType;
+    iput-object v2, v0, Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;->eSearchType:Lcom/autonavi/wh/navigation/server/poi/GSearchType;
 
     const/4 v2, 0x1
 
-    new-array v3, v2, [Lcom/autonavi/xm/navigation/server/poi/GAdareaInfoList;
+    new-array v3, v2, [Lcom/autonavi/wh/navigation/server/poi/GAdareaInfoList;
 
-    iget-object v2, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v2, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v2, v0, v3}, Lcom/autonavi/xm/navigation/engine/i;->a(Lcom/autonavi/xm/navigation/server/poi/GSearchCondition;[Lcom/autonavi/xm/navigation/server/poi/GAdareaInfoList;)Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v2, v0, v3}, Lcom/autonavi/wh/navigation/engine/i;->a(Lcom/autonavi/wh/navigation/server/poi/GSearchCondition;[Lcom/autonavi/wh/navigation/server/poi/GAdareaInfoList;)Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v2, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v2, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v2, :cond_2
 
@@ -1828,20 +1828,20 @@
 
     aget-object v0, v3, v1
 
-    iget v0, v0, Lcom/autonavi/xm/navigation/server/poi/GAdareaInfoList;->lNumberOfAdareaInfo:I
+    iget v0, v0, Lcom/autonavi/wh/navigation/server/poi/GAdareaInfoList;->lNumberOfAdareaInfo:I
 
     if-lez v0, :cond_1
 
     aget-object v0, v3, v1
 
-    iget-object v4, v0, Lcom/autonavi/xm/navigation/server/poi/GAdareaInfoList;->pAdareaInfo:[Lcom/autonavi/xm/navigation/server/poi/GAdareaInfo;
+    iget-object v4, v0, Lcom/autonavi/wh/navigation/server/poi/GAdareaInfoList;->pAdareaInfo:[Lcom/autonavi/wh/navigation/server/poi/GAdareaInfo;
 
     move v0, v1
 
     :goto_0
     aget-object v5, v3, v1
 
-    iget-object v5, v5, Lcom/autonavi/xm/navigation/server/poi/GAdareaInfoList;->pAdareaInfo:[Lcom/autonavi/xm/navigation/server/poi/GAdareaInfo;
+    iget-object v5, v5, Lcom/autonavi/wh/navigation/server/poi/GAdareaInfoList;->pAdareaInfo:[Lcom/autonavi/wh/navigation/server/poi/GAdareaInfo;
 
     array-length v5, v5
 
@@ -1851,11 +1851,11 @@
 
     aget-object v6, v4, v0
 
-    iget v6, v6, Lcom/autonavi/xm/navigation/server/poi/GAdareaInfo;->lAdminCode:I
+    iget v6, v6, Lcom/autonavi/wh/navigation/server/poi/GAdareaInfo;->lAdminCode:I
 
     aget-object v7, v4, v0
 
-    iget-object v7, v7, Lcom/autonavi/xm/navigation/server/poi/GAdareaInfo;->szAdminName:Ljava/lang/String;
+    iget-object v7, v7, Lcom/autonavi/wh/navigation/server/poi/GAdareaInfo;->szAdminName:Ljava/lang/String;
 
     invoke-direct {v5, v6, v7}, Lcom/autonavi/navigation/api/data/model/AdminArea;-><init>(ILjava/lang/String;)V
 
@@ -1889,13 +1889,13 @@
 .method public c()Z
     .locals 2
 
-    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/xm/navigation/engine/i;
+    iget-object v0, p0, Lcom/autonavi/navigation/api/poi/a/d;->c:Lcom/autonavi/wh/navigation/engine/i;
 
-    invoke-virtual {v0}, Lcom/autonavi/xm/navigation/engine/i;->c()Lcom/autonavi/xm/navigation/server/GStatus;
+    invoke-virtual {v0}, Lcom/autonavi/wh/navigation/engine/i;->c()Lcom/autonavi/wh/navigation/server/GStatus;
 
     move-result-object v0
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/xm/navigation/server/GStatus;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/GStatus;->GD_ERR_OK:Lcom/autonavi/wh/navigation/server/GStatus;
 
     if-ne v0, v1, :cond_0
 

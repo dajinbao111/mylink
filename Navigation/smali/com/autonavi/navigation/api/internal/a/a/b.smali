@@ -3,16 +3,16 @@
 
 
 # direct methods
-.method public static a(Lcom/autonavi/xm/navigation/server/map/GBitmap;)Landroid/graphics/Bitmap;
+.method public static a(Lcom/autonavi/wh/navigation/server/map/GBitmap;)Landroid/graphics/Bitmap;
     .locals 8
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->pAlpha:Ljava/nio/ByteBuffer;
+    iget-object v0, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->pAlpha:Ljava/nio/ByteBuffer;
 
     if-nez v0, :cond_0
 
-    invoke-static {p0}, Lcom/autonavi/navigation/api/internal/a/a/b;->b(Lcom/autonavi/xm/navigation/server/map/GBitmap;)Landroid/graphics/Bitmap;
+    invoke-static {p0}, Lcom/autonavi/navigation/api/internal/a/a/b;->b(Lcom/autonavi/wh/navigation/server/map/GBitmap;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -20,9 +20,9 @@
     return-object v0
 
     :cond_0
-    iget v0, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cxWidth:I
+    iget v0, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cxWidth:I
 
-    iget v2, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cyHeight:I
+    iget v2, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cyHeight:I
 
     sget-object v3, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
@@ -30,17 +30,17 @@
 
     move-result-object v3
 
-    iget-object v0, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->pData:Ljava/nio/ByteBuffer;
+    iget-object v0, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->pData:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    iget-object v0, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->pAlpha:Ljava/nio/ByteBuffer;
+    iget-object v0, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->pAlpha:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    iget v0, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cxWidth:I
+    iget v0, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cxWidth:I
 
-    iget v2, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cyHeight:I
+    iget v2, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cyHeight:I
 
     sget-object v4, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
@@ -48,21 +48,21 @@
 
     move-result-object v4
 
-    iget-object v0, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->pData:Ljava/nio/ByteBuffer;
+    iget-object v0, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->pData:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v4, v0}, Landroid/graphics/Bitmap;->copyPixelsFromBuffer(Ljava/nio/Buffer;)V
 
     move v0, v1
 
     :goto_1
-    iget v2, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cyHeight:I
+    iget v2, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cyHeight:I
 
     if-ge v0, v2, :cond_2
 
     move v2, v1
 
     :goto_2
-    iget v5, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cxWidth:I
+    iget v5, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cxWidth:I
 
     if-ge v2, v5, :cond_1
 
@@ -74,7 +74,7 @@
 
     and-int/2addr v5, v6
 
-    iget-object v6, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->pAlpha:Ljava/nio/ByteBuffer;
+    iget-object v6, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->pAlpha:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v6}, Ljava/nio/ByteBuffer;->get()B
 
@@ -109,7 +109,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Landroid/graphics/Bitmap;)Lcom/autonavi/xm/navigation/server/map/GBitmap;
+.method public static a(Landroid/graphics/Bitmap;)Lcom/autonavi/wh/navigation/server/map/GBitmap;
     .locals 11
 
     const/4 v1, 0x0
@@ -218,55 +218,55 @@
     goto :goto_0
 
     :cond_1
-    new-instance v0, Lcom/autonavi/xm/navigation/server/map/GBitmap;
+    new-instance v0, Lcom/autonavi/wh/navigation/server/map/GBitmap;
 
-    invoke-direct {v0}, Lcom/autonavi/xm/navigation/server/map/GBitmap;-><init>()V
+    invoke-direct {v0}, Lcom/autonavi/wh/navigation/server/map/GBitmap;-><init>()V
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v1
 
-    iput v1, v0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->nID:I
+    iput v1, v0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->nID:I
 
     const/16 v1, 0x10
 
-    iput v1, v0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cBPP:I
+    iput v1, v0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cBPP:I
 
-    sget-object v1, Lcom/autonavi/xm/navigation/server/map/GColorFormat;->COLOR_FORMAT_RGB565:Lcom/autonavi/xm/navigation/server/map/GColorFormat;
+    sget-object v1, Lcom/autonavi/wh/navigation/server/map/GColorFormat;->COLOR_FORMAT_RGB565:Lcom/autonavi/wh/navigation/server/map/GColorFormat;
 
-    iput-object v1, v0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->eFormat:Lcom/autonavi/xm/navigation/server/map/GColorFormat;
+    iput-object v1, v0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->eFormat:Lcom/autonavi/wh/navigation/server/map/GColorFormat;
 
-    iput v3, v0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cxWidth:I
+    iput v3, v0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cxWidth:I
 
-    iput v4, v0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cyHeight:I
+    iput v4, v0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cyHeight:I
 
     const/4 v1, 0x2
 
-    iput v1, v0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cbxPitch:I
+    iput v1, v0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cbxPitch:I
 
-    iget v1, v0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cbxPitch:I
+    iget v1, v0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cbxPitch:I
 
-    iget v2, v0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cxWidth:I
+    iget v2, v0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cxWidth:I
 
     mul-int/2addr v1, v2
 
-    iput v1, v0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cbyPicth:I
+    iput v1, v0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cbyPicth:I
 
-    iput-object v6, v0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->pData:Ljava/nio/ByteBuffer;
+    iput-object v6, v0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->pData:Ljava/nio/ByteBuffer;
 
-    iput-object v5, v0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->pAlpha:Ljava/nio/ByteBuffer;
+    iput-object v5, v0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->pAlpha:Ljava/nio/ByteBuffer;
 
     return-object v0
 .end method
 
-.method public static b(Lcom/autonavi/xm/navigation/server/map/GBitmap;)Landroid/graphics/Bitmap;
+.method public static b(Lcom/autonavi/wh/navigation/server/map/GBitmap;)Landroid/graphics/Bitmap;
     .locals 8
 
     const/4 v1, 0x0
 
-    iget v0, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cxWidth:I
+    iget v0, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cxWidth:I
 
-    iget v2, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cyHeight:I
+    iget v2, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cyHeight:I
 
     sget-object v3, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
@@ -274,9 +274,9 @@
 
     move-result-object v5
 
-    iget v0, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cxWidth:I
+    iget v0, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cxWidth:I
 
-    iget v2, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cyHeight:I
+    iget v2, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cyHeight:I
 
     sget-object v3, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
@@ -284,7 +284,7 @@
 
     move-result-object v6
 
-    iget-object v0, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->pData:Ljava/nio/ByteBuffer;
+    iget-object v0, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->pData:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v6, v0}, Landroid/graphics/Bitmap;->copyPixelsFromBuffer(Ljava/nio/Buffer;)V
 
@@ -295,14 +295,14 @@
     move v0, v1
 
     :goto_0
-    iget v3, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cyHeight:I
+    iget v3, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cyHeight:I
 
     if-ge v0, v3, :cond_1
 
     move v3, v1
 
     :goto_1
-    iget v4, p0, Lcom/autonavi/xm/navigation/server/map/GBitmap;->cxWidth:I
+    iget v4, p0, Lcom/autonavi/wh/navigation/server/map/GBitmap;->cxWidth:I
 
     if-ge v3, v4, :cond_0
 
