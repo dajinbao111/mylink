@@ -262,7 +262,7 @@
 
     move-result-object v1
 
-    const-string v0, "com.autonavi.xm.extra.POI_DATA"
+    const-string v0, "com.autonavi.wh.extra.POI_DATA"
 
     invoke-virtual {v1, v0}, Landroid/os/Bundle;->getParcelableArray(Ljava/lang/String;)[Landroid/os/Parcelable;
 
@@ -471,7 +471,7 @@
 
     invoke-virtual {v3, v0}, Lcom/autonavi/navigation/api/poi/model/Poi;->setTel(Ljava/lang/String;)Lcom/autonavi/navigation/api/poi/model/Poi;
 
-    const-string v0, "com.autonavi.xm.extra.POI"
+    const-string v0, "com.autonavi.wh.extra.POI"
 
     invoke-virtual {v2, v0, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 

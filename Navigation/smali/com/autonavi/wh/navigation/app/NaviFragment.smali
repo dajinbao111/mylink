@@ -491,7 +491,7 @@
 
     if-eqz v2, :cond_1
 
-    const-string v1, "com.autonavi.xm.extra.SAVED_INSTANCE_STATE"
+    const-string v1, "com.autonavi.wh.extra.SAVED_INSTANCE_STATE"
 
     invoke-virtual {v2, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -503,7 +503,7 @@
 
     invoke-virtual {v0, v1}, Lcom/autonavi/wh/navigation/app/NaviFragment;->setInitialSavedState(Lcom/autonavi/wh/support/app/Fragment$SavedState;)V
 
-    const-string v1, "com.autonavi.xm.extra.SAVED_INSTANCE_STATE"
+    const-string v1, "com.autonavi.wh.extra.SAVED_INSTANCE_STATE"
 
     invoke-virtual {v2, v1}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
 

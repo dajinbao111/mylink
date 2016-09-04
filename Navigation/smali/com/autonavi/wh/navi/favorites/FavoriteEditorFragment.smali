@@ -22,15 +22,15 @@
 
 .field public static final EDIT_TYPE_POI:I = 0x4
 
-.field public static final EXTRA_FAVORITE_POI:Ljava/lang/String; = "com.autonavi.xm.extra.FAVORITE_POI"
+.field public static final EXTRA_FAVORITE_POI:Ljava/lang/String; = "com.autonavi.wh.extra.FAVORITE_POI"
 
-.field public static final EXTRA_FAV_EDITOR_TYPE:Ljava/lang/String; = "com.autonavi.xm.extra.FAV_EDITOR_TYPE"
+.field public static final EXTRA_FAV_EDITOR_TYPE:Ljava/lang/String; = "com.autonavi.wh.extra.FAV_EDITOR_TYPE"
 
-.field public static final EXTRA_MAP_CENTER_INFO:Ljava/lang/String; = "com.autonavi.xm.extra.MAP_CENTER_INFO"
+.field public static final EXTRA_MAP_CENTER_INFO:Ljava/lang/String; = "com.autonavi.wh.extra.MAP_CENTER_INFO"
 
-.field public static final EXTRA_MY_LOCATION:Ljava/lang/String; = "com.autonavi.xm.extra.MY_LOCATION"
+.field public static final EXTRA_MY_LOCATION:Ljava/lang/String; = "com.autonavi.wh.extra.MY_LOCATION"
 
-.field public static final EXTRA_POI:Ljava/lang/String; = "com.autonavi.xm.extra.POI"
+.field public static final EXTRA_POI:Ljava/lang/String; = "com.autonavi.wh.extra.POI"
 
 .field private static final HONGKONG_AREA_CODE:I = 0x354
 
@@ -1105,7 +1105,7 @@
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    const-string v2, "com.autonavi.xm.extra.FAVORITE_POI"
+    const-string v2, "com.autonavi.wh.extra.FAVORITE_POI"
 
     const/4 v0, 0x0
 
@@ -1161,7 +1161,7 @@
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    const-string v1, "com.autonavi.xm.extra.FAVORITE_POI"
+    const-string v1, "com.autonavi.wh.extra.FAVORITE_POI"
 
     iget-object v2, p0, Lcom/autonavi/wh/navi/favorites/FavoriteEditorFragment;->mNewFavoritePoi:Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;
 
@@ -2212,7 +2212,7 @@
 
     move-result-object v0
 
-    const-string v1, "com.autonavi.xm.extra.FAV_EDITOR_TYPE"
+    const-string v1, "com.autonavi.wh.extra.FAV_EDITOR_TYPE"
 
     const/4 v2, 0x3
 
@@ -2249,7 +2249,7 @@
     return-void
 
     :pswitch_0
-    const-string v1, "com.autonavi.xm.extra.MY_LOCATION"
+    const-string v1, "com.autonavi.wh.extra.MY_LOCATION"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -2262,7 +2262,7 @@
     goto :goto_0
 
     :pswitch_1
-    const-string v1, "com.autonavi.xm.extra.MAP_CENTER_INFO"
+    const-string v1, "com.autonavi.wh.extra.MAP_CENTER_INFO"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -2275,7 +2275,7 @@
     goto :goto_0
 
     :pswitch_2
-    const-string v1, "com.autonavi.xm.extra.FAVORITE_POI"
+    const-string v1, "com.autonavi.wh.extra.FAVORITE_POI"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -2288,7 +2288,7 @@
     goto :goto_0
 
     :pswitch_3
-    const-string v1, "com.autonavi.xm.extra.POI"
+    const-string v1, "com.autonavi.wh.extra.POI"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 

@@ -986,7 +986,7 @@
 
     if-ne p2, v0, :cond_2
 
-    const-string v0, "com.autonavi.xm.extra.POI"
+    const-string v0, "com.autonavi.wh.extra.POI"
 
     invoke-virtual {p3, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -1111,7 +1111,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v1, "com.autonavi.xm.extra.MAP_CENTER_INFO"
+    const-string v1, "com.autonavi.wh.extra.MAP_CENTER_INFO"
 
     iget-object v2, p0, Lcom/autonavi/wh/navi/commonuse/CommonUseFragment;->mAnMap:Lcom/autonavi/navigation/api/map/AnMap;
 
@@ -1121,7 +1121,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const-string v1, "com.autonavi.xm.extra.FAV_EDITOR_TYPE"
+    const-string v1, "com.autonavi.wh.extra.FAV_EDITOR_TYPE"
 
     invoke-virtual {v0, v1, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 

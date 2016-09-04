@@ -167,7 +167,7 @@
 
     if-ne p2, v2, :cond_0
 
-    const-string v0, "com.autonavi.xm.extra.ADMIN_AREA_INFO"
+    const-string v0, "com.autonavi.wh.extra.ADMIN_AREA_INFO"
 
     invoke-virtual {p3, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -190,7 +190,7 @@
 
     if-ne p2, v2, :cond_1
 
-    const-string v0, "com.autonavi.xm.extra.POI"
+    const-string v0, "com.autonavi.wh.extra.POI"
 
     invoke-virtual {p3, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -456,7 +456,7 @@
 
     if-eqz v1, :cond_5
 
-    const-string v0, "com.autonavi.xm.extra.LOCATION_POINT"
+    const-string v0, "com.autonavi.wh.extra.LOCATION_POINT"
 
     invoke-virtual {v1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -624,7 +624,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    const-string v1, "com.autonavi.xm.extra.LOCATION_POINT"
+    const-string v1, "com.autonavi.wh.extra.LOCATION_POINT"
 
     iget-object v2, p0, Lcom/autonavi/wh/navi/menu/fragment/CategorySearcherFragment;->mMapCenterPoint:Lcom/autonavi/navigation/api/map/model/LatLng;
 

@@ -6,7 +6,7 @@
 
 
 # static fields
-.field private static final META_CONFIGURATION_TITLE:Ljava/lang/String; = "com.autonavi.xm.meta.CONFIGURATION_TITLE"
+.field private static final META_CONFIGURATION_TITLE:Ljava/lang/String; = "com.autonavi.wh.meta.CONFIGURATION_TITLE"
 
 
 # instance fields
@@ -68,7 +68,7 @@
 
     iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
 
-    const-string v3, "com.autonavi.xm.meta.CONFIGURATION_TITLE"
+    const-string v3, "com.autonavi.wh.meta.CONFIGURATION_TITLE"
 
     invoke-virtual {v1, v3}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
     :try_end_0

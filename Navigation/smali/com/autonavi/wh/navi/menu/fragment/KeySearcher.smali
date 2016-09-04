@@ -3076,7 +3076,7 @@
 
     if-ne p2, v2, :cond_0
 
-    const-string v0, "com.autonavi.xm.extra.ADMIN_AREA_INFO"
+    const-string v0, "com.autonavi.wh.extra.ADMIN_AREA_INFO"
 
     invoke-virtual {p3, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -3101,7 +3101,7 @@
 
     if-ne p2, v2, :cond_1
 
-    const-string v0, "com.autonavi.xm.extra.POI"
+    const-string v0, "com.autonavi.wh.extra.POI"
 
     invoke-virtual {p3, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -3920,7 +3920,7 @@
 
     invoke-direct {v2, v0, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v3, "com.autonavi.xm.extra.POI"
+    const-string v3, "com.autonavi.wh.extra.POI"
 
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 

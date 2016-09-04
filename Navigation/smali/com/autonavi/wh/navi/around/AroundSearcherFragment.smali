@@ -562,7 +562,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v1, "com.autonavi.xm.extra.POI_DATA"
+    const-string v1, "com.autonavi.wh.extra.POI_DATA"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[Landroid/os/Parcelable;)Landroid/content/Intent;
 
@@ -865,7 +865,7 @@
 
     if-eqz v1, :cond_4
 
-    const-string v0, "com.autonavi.xm.extra.LOCATION_POINT"
+    const-string v0, "com.autonavi.wh.extra.LOCATION_POINT"
 
     invoke-virtual {v1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -1118,7 +1118,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    const-string v1, "com.autonavi.xm.extra.LOCATION_POINT"
+    const-string v1, "com.autonavi.wh.extra.LOCATION_POINT"
 
     iget-object v2, p0, Lcom/autonavi/wh/navi/around/AroundSearcherFragment;->mMapCenterPoint:Lcom/autonavi/navigation/api/map/model/LatLng;
 

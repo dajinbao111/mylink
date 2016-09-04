@@ -7,27 +7,27 @@
 
 .field private static final DEFAULT_TIME_ZONE:Ljava/lang/String; = "GMT+08:00"
 
-.field public static final META_DATA_AUDIO_CONTROL_ADAPTER:Ljava/lang/String; = "com.autonavi.xm.meta.AUDIO_CONTROL_ADAPTER"
+.field public static final META_DATA_AUDIO_CONTROL_ADAPTER:Ljava/lang/String; = "com.autonavi.wh.meta.AUDIO_CONTROL_ADAPTER"
 
-.field public static final META_DATA_BACK_TO_MAP_COMPONENT:Ljava/lang/String; = "com.autonavi.xm.meta.BACK_TO_MAP_COMPONENT"
+.field public static final META_DATA_BACK_TO_MAP_COMPONENT:Ljava/lang/String; = "com.autonavi.wh.meta.BACK_TO_MAP_COMPONENT"
 
-.field public static final META_DATA_CAN_BUS_ADAPTER:Ljava/lang/String; = "com.autonavi.xm.meta.CAN_BUS_ADAPTER"
+.field public static final META_DATA_CAN_BUS_ADAPTER:Ljava/lang/String; = "com.autonavi.wh.meta.CAN_BUS_ADAPTER"
 
-.field public static final META_DATA_CLIENT_ID:Ljava/lang/String; = "com.autonavi.xm.meta.CLINET_ID"
+.field public static final META_DATA_CLIENT_ID:Ljava/lang/String; = "com.autonavi.wh.meta.CLINET_ID"
 
-.field public static final META_DATA_LOCATION_ADAPTER:Ljava/lang/String; = "com.autonavi.xm.meta.LOCATION_ADAPTER"
+.field public static final META_DATA_LOCATION_ADAPTER:Ljava/lang/String; = "com.autonavi.wh.meta.LOCATION_ADAPTER"
 
-.field public static final META_DATA_LOCATION_SENSOR_ADAPTER:Ljava/lang/String; = "com.autonavi.xm.meta.LOCATION_SENSOR_ADAPTER"
+.field public static final META_DATA_LOCATION_SENSOR_ADAPTER:Ljava/lang/String; = "com.autonavi.wh.meta.LOCATION_SENSOR_ADAPTER"
 
-.field public static final META_DATA_MODEL_ID:Ljava/lang/String; = "com.autonavi.xm.meta.MODEL_ID"
+.field public static final META_DATA_MODEL_ID:Ljava/lang/String; = "com.autonavi.wh.meta.MODEL_ID"
 
-.field public static final META_DATA_MULTI_AUDIO_CHANNEL:Ljava/lang/String; = "com.autonavi.xm.meta.MULTI_AUDIO_CHANNEL"
+.field public static final META_DATA_MULTI_AUDIO_CHANNEL:Ljava/lang/String; = "com.autonavi.wh.meta.MULTI_AUDIO_CHANNEL"
 
-.field public static final META_DATA_PREFER_DATA_DIR:Ljava/lang/String; = "com.autonavi.xm.meta.PREFER_DATA_DIR"
+.field public static final META_DATA_PREFER_DATA_DIR:Ljava/lang/String; = "com.autonavi.wh.meta.PREFER_DATA_DIR"
 
-.field public static final META_DATA_PREFER_TIME_ZONE:Ljava/lang/String; = "com.autonavi.xm.meta.PREFER_TIME_ZONE"
+.field public static final META_DATA_PREFER_TIME_ZONE:Ljava/lang/String; = "com.autonavi.wh.meta.PREFER_TIME_ZONE"
 
-.field public static final META_DATA_PREFER_TRACES_DIR:Ljava/lang/String; = "com.autonavi.xm.meta.PREFER_TRACES_DIR"
+.field public static final META_DATA_PREFER_TRACES_DIR:Ljava/lang/String; = "com.autonavi.wh.meta.PREFER_TRACES_DIR"
 
 .field private static final PREFER_TRACES_DIR:Ljava/lang/String; = "traces"
 
@@ -71,7 +71,7 @@
 .method public static getClientId(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
 
-    const-string v0, "com.autonavi.xm.meta.CLINET_ID"
+    const-string v0, "com.autonavi.wh.meta.CLINET_ID"
 
     invoke-static {p0, v0}, Lcom/autonavi/wh/navigation/NaviHelper;->getStringMeta(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -116,7 +116,7 @@
 .method public static getModelId(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
 
-    const-string v0, "com.autonavi.xm.meta.MODEL_ID"
+    const-string v0, "com.autonavi.wh.meta.MODEL_ID"
 
     invoke-static {p0, v0}, Lcom/autonavi/wh/navigation/NaviHelper;->getStringMeta(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -128,7 +128,7 @@
 .method public static getPreferTimeZone(Landroid/content/Context;)Ljava/util/TimeZone;
     .locals 1
 
-    const-string v0, "com.autonavi.xm.meta.PREFER_TIME_ZONE"
+    const-string v0, "com.autonavi.wh.meta.PREFER_TIME_ZONE"
 
     invoke-static {p0, v0}, Lcom/autonavi/wh/navigation/NaviHelper;->getStringMeta(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -149,7 +149,7 @@
 .method public static getPreferTracesDir(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    const-string v0, "com.autonavi.xm.meta.PREFER_TRACES_DIR"
+    const-string v0, "com.autonavi.wh.meta.PREFER_TRACES_DIR"
 
     invoke-static {p0, v0}, Lcom/autonavi/wh/navigation/NaviHelper;->getStringMeta(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 

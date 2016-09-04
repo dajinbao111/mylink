@@ -993,7 +993,7 @@
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    const-string v2, "com.autonavi.xm.extra.POI"
+    const-string v2, "com.autonavi.wh.extra.POI"
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
@@ -1015,7 +1015,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v1, "com.autonavi.xm.extra.MAP_CENTER_INFO"
+    const-string v1, "com.autonavi.wh.extra.MAP_CENTER_INFO"
 
     iget-object v2, p0, Lcom/autonavi/wh/navi/poi/fragment/PoiBrowser;->mAnMap:Lcom/autonavi/navigation/api/map/AnMap;
 
@@ -1025,7 +1025,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const-string v1, "com.autonavi.xm.extra.FAV_EDITOR_TYPE"
+    const-string v1, "com.autonavi.wh.extra.FAV_EDITOR_TYPE"
 
     const/4 v2, 0x2
 
@@ -1063,7 +1063,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v1, "com.autonavi.xm.action.INPUT"
+    const-string v1, "com.autonavi.wh.action.INPUT"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
@@ -1113,7 +1113,7 @@
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    const-string v1, "com.autonavi.xm.extra.LOCATION_POINT"
+    const-string v1, "com.autonavi.wh.extra.LOCATION_POINT"
 
     iget-object v2, p0, Lcom/autonavi/wh/navi/poi/fragment/PoiBrowser;->mAnMap:Lcom/autonavi/navigation/api/map/AnMap;
 
@@ -1592,7 +1592,7 @@
 
     if-ne p1, v0, :cond_0
 
-    const-string v0, "com.autonavi.xm.extra.FAVORITE_POI"
+    const-string v0, "com.autonavi.wh.extra.FAVORITE_POI"
 
     invoke-virtual {p3, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -1609,7 +1609,7 @@
     goto :goto_0
 
     :cond_2
-    const-string v0, "com.autonavi.xm.extra.FAVORITE_POI"
+    const-string v0, "com.autonavi.wh.extra.FAVORITE_POI"
 
     invoke-virtual {p3, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -2036,7 +2036,7 @@
 
     iput-boolean v2, p0, Lcom/autonavi/wh/navi/poi/fragment/PoiBrowser;->mIsFourService:Z
 
-    const-string v2, "com.autonavi.xm.extra.POI"
+    const-string v2, "com.autonavi.wh.extra.POI"
 
     invoke-virtual {v0, v2}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
 
@@ -2044,7 +2044,7 @@
 
     if-eqz v2, :cond_6
 
-    const-string v2, "com.autonavi.xm.extra.POI"
+    const-string v2, "com.autonavi.wh.extra.POI"
 
     invoke-virtual {v0, v2}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -2262,7 +2262,7 @@
     return-void
 
     :cond_6
-    const-string v2, "com.autonavi.xm.extra.FAVORITE_POI"
+    const-string v2, "com.autonavi.wh.extra.FAVORITE_POI"
 
     invoke-virtual {v0, v2}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -2585,7 +2585,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v1, "com.autonavi.xm.extra.MAP_CENTER_INFO"
+    const-string v1, "com.autonavi.wh.extra.MAP_CENTER_INFO"
 
     iget-object v2, p0, Lcom/autonavi/wh/navi/poi/fragment/PoiBrowser;->mAnMap:Lcom/autonavi/navigation/api/map/AnMap;
 
@@ -2595,7 +2595,7 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const-string v1, "com.autonavi.xm.extra.FAV_EDITOR_TYPE"
+    const-string v1, "com.autonavi.wh.extra.FAV_EDITOR_TYPE"
 
     const/4 v2, 0x2
 
@@ -2614,13 +2614,13 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v1, "com.autonavi.xm.extra.POI"
+    const-string v1, "com.autonavi.wh.extra.POI"
 
     iget-object v2, p0, Lcom/autonavi/wh/navi/poi/fragment/PoiBrowser;->mPoi:Lcom/autonavi/navigation/api/poi/model/Poi;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const-string v1, "com.autonavi.xm.extra.FAV_EDITOR_TYPE"
+    const-string v1, "com.autonavi.wh.extra.FAV_EDITOR_TYPE"
 
     const/4 v2, 0x4
 
@@ -2650,7 +2650,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v1, "com.autonavi.xm.extra.FAVORITE_POI"
+    const-string v1, "com.autonavi.wh.extra.FAVORITE_POI"
 
     iget-object v2, p0, Lcom/autonavi/wh/navi/poi/fragment/PoiBrowser;->mFavoritePoi:Lcom/autonavi/navigation/api/favorite/model/FavoritePoi;
 
@@ -2691,7 +2691,7 @@
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    const-string v1, "com.autonavi.xm.extra.POI"
+    const-string v1, "com.autonavi.wh.extra.POI"
 
     iget-object v2, p0, Lcom/autonavi/wh/navi/poi/fragment/PoiBrowser;->mPoi:Lcom/autonavi/navigation/api/poi/model/Poi;
 

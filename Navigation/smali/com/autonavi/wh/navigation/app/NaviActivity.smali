@@ -6,7 +6,7 @@
 
 
 # static fields
-.field private static final DIALOG_FRAGMENT_TAG:Ljava/lang/String; = "com.autonavi.xm.tag.DialogFragment:%1$d-%2$d"
+.field private static final DIALOG_FRAGMENT_TAG:Ljava/lang/String; = "com.autonavi.wh.tag.DialogFragment:%1$d-%2$d"
 
 
 # instance fields
@@ -109,7 +109,7 @@
 .method static makeDialogFragmentTag(II)Ljava/lang/String;
     .locals 4
 
-    const-string v0, "com.autonavi.xm.tag.DialogFragment:%1$d-%2$d"
+    const-string v0, "com.autonavi.wh.tag.DialogFragment:%1$d-%2$d"
 
     const/4 v1, 0x2
 
@@ -264,7 +264,7 @@
 
     invoke-virtual {p0, v1}, Lcom/autonavi/wh/navigation/app/NaviActivity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
-    const-string v2, "com.autonavi.xm.extra.SAVED_INSTANCE_STATE"
+    const-string v2, "com.autonavi.wh.extra.SAVED_INSTANCE_STATE"
 
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;
 
@@ -726,7 +726,7 @@
 
     move-result-object v0
 
-    const-string v1, "com.autonavi.xm.extra.SAVED_INSTANCE_STATE"
+    const-string v1, "com.autonavi.wh.extra.SAVED_INSTANCE_STATE"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->getBundleExtra(Ljava/lang/String;)Landroid/os/Bundle;
 
@@ -736,7 +736,7 @@
 
     invoke-virtual {p0, v1}, Lcom/autonavi/wh/navigation/app/NaviActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
-    const-string v1, "com.autonavi.xm.extra.SAVED_INSTANCE_STATE"
+    const-string v1, "com.autonavi.wh.extra.SAVED_INSTANCE_STATE"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->removeExtra(Ljava/lang/String;)V
 
@@ -855,7 +855,7 @@
 
     if-eqz v6, :cond_3
 
-    const-string v6, "com.autonavi.xm.extra.SAVED_INSTANCE_STATE"
+    const-string v6, "com.autonavi.wh.extra.SAVED_INSTANCE_STATE"
 
     aget-object v7, v4, v0
 

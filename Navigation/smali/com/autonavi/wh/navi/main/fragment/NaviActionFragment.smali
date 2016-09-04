@@ -11,11 +11,11 @@
 
 .field public static final ACTION_DELETE_ROUTE:Ljava/lang/String; = "action.DELETE_ROUTE"
 
-.field public static final ACTION_EXTRA_INPUT:Ljava/lang/String; = "com.autonavi.xm.action.INPUT"
+.field public static final ACTION_EXTRA_INPUT:Ljava/lang/String; = "com.autonavi.wh.action.INPUT"
 
-.field private static final ACTION_EXTRA_LAT:Ljava/lang/String; = "com.autonavi.xm.action.EXTRA_LAT"
+.field private static final ACTION_EXTRA_LAT:Ljava/lang/String; = "com.autonavi.wh.action.EXTRA_LAT"
 
-.field private static final ACTION_EXTRA_LON:Ljava/lang/String; = "com.autonavi.xm.action.EXTRA_LON"
+.field private static final ACTION_EXTRA_LON:Ljava/lang/String; = "com.autonavi.wh.action.EXTRA_LON"
 
 .field public static final ACTION_GUIDE_ROUTE:Ljava/lang/String; = "action.GUIDE_ROUTE"
 
@@ -45,7 +45,7 @@
 
 .field private static final MAP_OFFSET_BY_PIXEL:I = 0x14
 
-.field public static final PACKAGE_NAME_IDRIVE:Ljava/lang/String; = "com.autonavi.xm.idrive"
+.field public static final PACKAGE_NAME_IDRIVE:Ljava/lang/String; = "com.autonavi.wh.idrive"
 
 .field public static final REQUEST_CODE_STATEMENT_REPLY:I = 0x1
 
@@ -898,7 +898,7 @@
 
     if-eqz v2, :cond_0
 
-    const-string v0, "com.autonavi.xm.extra.POI"
+    const-string v0, "com.autonavi.wh.extra.POI"
 
     invoke-virtual {p1, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -945,7 +945,7 @@
 
     iput-boolean v1, p0, Lcom/autonavi/wh/navi/main/fragment/NaviActionFragment;->isPoiBrowserIn:Z
 
-    const-string v0, "com.autonavi.xm.action.INPUT"
+    const-string v0, "com.autonavi.wh.action.INPUT"
 
     invoke-virtual {p1, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -968,7 +968,7 @@
     goto :goto_0
 
     :cond_2
-    const-string v2, "com.autonavi.xm.action.NAVIGATE"
+    const-string v2, "com.autonavi.wh.action.NAVIGATE"
 
     invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1017,7 +1017,7 @@
     goto :goto_0
 
     :cond_3
-    const-string v2, "com.autonavi.xm.action.SHOW_ON_MAP"
+    const-string v2, "com.autonavi.wh.action.SHOW_ON_MAP"
 
     invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1078,7 +1078,7 @@
     goto/16 :goto_0
 
     :cond_6
-    const-string v2, "com.autonavi.xm.action.SETTINGS"
+    const-string v2, "com.autonavi.wh.action.SETTINGS"
 
     invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1284,7 +1284,7 @@
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    const-string v1, "com.autonavi.xm.extra.LOCATION_POINT"
+    const-string v1, "com.autonavi.wh.extra.LOCATION_POINT"
 
     iget-object v2, p0, Lcom/autonavi/wh/navi/main/fragment/NaviActionFragment;->mAnMap:Lcom/autonavi/navigation/api/map/AnMap;
 
@@ -1983,7 +1983,7 @@
 
     if-ne p2, v0, :cond_0
 
-    const-string v0, "com.autonavi.xm.extra.IS_STATEMENT_ACCEPTED"
+    const-string v0, "com.autonavi.wh.extra.IS_STATEMENT_ACCEPTED"
 
     const/4 v1, 0x0
 
@@ -3054,11 +3054,11 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v2, "com.autonavi.xm.extra.MAP_CENTER_INFO"
+    const-string v2, "com.autonavi.wh.extra.MAP_CENTER_INFO"
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const-string v0, "com.autonavi.xm.extra.FAV_EDITOR_TYPE"
+    const-string v0, "com.autonavi.wh.extra.FAV_EDITOR_TYPE"
 
     const/4 v2, 0x2
 

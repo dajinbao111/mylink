@@ -913,7 +913,7 @@
 
     if-eqz v0, :cond_0
 
-    const-string v2, "com.autonavi.xm.extra.FAVORITE_POI"
+    const-string v2, "com.autonavi.wh.extra.FAVORITE_POI"
 
     iget-object v0, p0, Lcom/autonavi/wh/navi/favorites/FavoritesFragment;->mFavoritePois:Ljava/util/List;
 
@@ -944,7 +944,7 @@
     return-void
 
     :cond_0
-    const-string v2, "com.autonavi.xm.extra.FAVORITE_POI"
+    const-string v2, "com.autonavi.wh.extra.FAVORITE_POI"
 
     iget-object v3, p0, Lcom/autonavi/wh/navi/favorites/FavoritesFragment;->mFavoritePois:Ljava/util/List;
 
@@ -973,7 +973,7 @@
 
     if-eqz v0, :cond_2
 
-    const-string v2, "com.autonavi.xm.extra.POI"
+    const-string v2, "com.autonavi.wh.extra.POI"
 
     iget-object v0, p0, Lcom/autonavi/wh/navi/favorites/FavoritesFragment;->mFavoritePois:Ljava/util/List;
 
@@ -990,7 +990,7 @@
     goto :goto_0
 
     :cond_2
-    const-string v2, "com.autonavi.xm.extra.POI"
+    const-string v2, "com.autonavi.wh.extra.POI"
 
     iget-object v3, p0, Lcom/autonavi/wh/navi/favorites/FavoritesFragment;->mFavoritePois:Ljava/util/List;
 

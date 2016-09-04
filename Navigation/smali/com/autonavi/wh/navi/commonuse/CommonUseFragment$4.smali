@@ -116,7 +116,7 @@
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    const-string v0, "com.autonavi.xm.action.NAVIGATE"
+    const-string v0, "com.autonavi.wh.action.NAVIGATE"
 
     invoke-virtual {v1, v0}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 

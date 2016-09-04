@@ -26,7 +26,7 @@
 
     move-result-object v0
 
-    const-string v1, "com.autonavi.xm.extra.QUIT_APPLICATION"
+    const-string v1, "com.autonavi.wh.extra.QUIT_APPLICATION"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

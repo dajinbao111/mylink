@@ -59,7 +59,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v1, "com.autonavi.xm.action.QUIT_APPLICATION"
+    const-string v1, "com.autonavi.wh.action.QUIT_APPLICATION"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -350,7 +350,7 @@
 
     iget-object v0, p0, Lcom/autonavi/wh/navi/setting/fragment/SystemSettings;->mAction:Ljava/lang/String;
 
-    const-string v1, "com.autonavi.xm.action.SETTINGS"
+    const-string v1, "com.autonavi.wh.action.SETTINGS"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

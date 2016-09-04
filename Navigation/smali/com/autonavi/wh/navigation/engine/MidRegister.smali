@@ -100,14 +100,26 @@
     goto :goto_0
 .end method
 
-.method private static native native_GDMID_GetInstallCode(Ljava/lang/String;[Ljava/lang/String;I)I
+.method private static native_GDMID_GetInstallCode(Ljava/lang/String;[Ljava/lang/String;I)I
+     .registers 1
+     const v0, 0x0
+     return v0
 .end method
 
-.method private static native native_GDMID_GetRegisterInfo([Ljava/lang/String;[Ljava/lang/String;)I
+.method private static native_GDMID_GetRegisterInfo([Ljava/lang/String;[Ljava/lang/String;)I
+    .registers 1
+    const v0, 0x0
+    return v0
 .end method
 
-.method private static native native_GDMID_IsValidateUser(Ljava/lang/String;Ljava/lang/String;I)I
+.method private static native_GDMID_IsValidateUser(Ljava/lang/String;Ljava/lang/String;I)I
+    .registers 1
+    const v0, 0x0
+    return v0
 .end method
 
-.method private static native native_GDMID_Register(Ljava/lang/String;)I
+.method private static native_GDMID_Register(Ljava/lang/String;)I
+    .registers 1
+    const v0, 0x0
+    return v0
 .end method

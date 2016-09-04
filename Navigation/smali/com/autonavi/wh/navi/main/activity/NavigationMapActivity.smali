@@ -3,11 +3,11 @@
 
 
 # static fields
-.field public static final ACTION_NAVIGATE:Ljava/lang/String; = "com.autonavi.xm.action.NAVIGATE"
+.field public static final ACTION_NAVIGATE:Ljava/lang/String; = "com.autonavi.wh.action.NAVIGATE"
 
-.field public static final ACTION_SETTINGS:Ljava/lang/String; = "com.autonavi.xm.action.SETTINGS"
+.field public static final ACTION_SETTINGS:Ljava/lang/String; = "com.autonavi.wh.action.SETTINGS"
 
-.field public static final ACTION_SHOW_ON_MAP:Ljava/lang/String; = "com.autonavi.xm.action.SHOW_ON_MAP"
+.field public static final ACTION_SHOW_ON_MAP:Ljava/lang/String; = "com.autonavi.wh.action.SHOW_ON_MAP"
 
 .field public static final ACTION_VOLUME_CHANGED:Ljava/lang/String; = "com.yftech.keyevent_navi"
 
@@ -19,11 +19,11 @@
 
 .field private static final DIALOG_ID_MISSING_DATA:I = 0x0
 
-.field public static final EXTRA_LATITUDE:Ljava/lang/String; = "com.autonavi.xm.extra.LATITUDE"
+.field public static final EXTRA_LATITUDE:Ljava/lang/String; = "com.autonavi.wh.extra.LATITUDE"
 
-.field public static final EXTRA_LONGITUDE:Ljava/lang/String; = "com.autonavi.xm.extra.LONGITUDE"
+.field public static final EXTRA_LONGITUDE:Ljava/lang/String; = "com.autonavi.wh.extra.LONGITUDE"
 
-.field public static final EXTRA_NAME:Ljava/lang/String; = "com.autonavi.xm.extra.NAME"
+.field public static final EXTRA_NAME:Ljava/lang/String; = "com.autonavi.wh.extra.NAME"
 
 .field public static final IS_TRAFFIC_ENABLE:Ljava/lang/String; = "isTrafficEnable"
 
@@ -359,7 +359,7 @@
 
     move-result-object v0
 
-    const-string v1, "com.autonavi.xm.action.SETTINGS"
+    const-string v1, "com.autonavi.wh.action.SETTINGS"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -890,7 +890,7 @@
 
     new-instance v1, Landroid/content/IntentFilter;
 
-    const-string v2, "com.autonavi.xm.extra.QUIT_APPLICATION"
+    const-string v2, "com.autonavi.wh.extra.QUIT_APPLICATION"
 
     invoke-direct {v1, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
@@ -1056,7 +1056,7 @@
     iput-boolean v2, p0, Lcom/autonavi/wh/navi/main/activity/NavigationMapActivity;->mHasPendingIntent:Z
 
     :cond_0
-    const-string v1, "com.autonavi.xm.action.BACK_TO_MY_LOCATION"
+    const-string v1, "com.autonavi.wh.action.BACK_TO_MY_LOCATION"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1071,7 +1071,7 @@
     return-void
 
     :cond_2
-    const-string v1, "com.autonavi.xm.action.QUIT_APPLICATION"
+    const-string v1, "com.autonavi.wh.action.QUIT_APPLICATION"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1079,7 +1079,7 @@
 
     if-nez v1, :cond_3
 
-    const-string v1, "com.autonavi.xm.extra.QUIT_APPLICATION"
+    const-string v1, "com.autonavi.wh.extra.QUIT_APPLICATION"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1095,7 +1095,7 @@
     goto :goto_0
 
     :cond_4
-    const-string v1, "com.autonavi.xm.extra.CALL_BY_OTHER"
+    const-string v1, "com.autonavi.wh.extra.CALL_BY_OTHER"
 
     const/4 v2, 0x0
 
@@ -1105,7 +1105,7 @@
 
     if-nez v1, :cond_1
 
-    const-string v1, "com.autonavi.xm.action.NAVIGATE"
+    const-string v1, "com.autonavi.wh.action.NAVIGATE"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1113,7 +1113,7 @@
 
     if-nez v1, :cond_5
 
-    const-string v1, "com.autonavi.xm.action.SHOW_ON_MAP"
+    const-string v1, "com.autonavi.wh.action.SHOW_ON_MAP"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1147,7 +1147,7 @@
     goto :goto_0
 
     :cond_6
-    const-string v1, "com.autonavi.xm.action.SETTINGS"
+    const-string v1, "com.autonavi.wh.action.SETTINGS"
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

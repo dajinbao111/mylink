@@ -107,7 +107,7 @@
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    const-string v1, "com.autonavi.xm.extra.ADMIN_AREA_INFO"
+    const-string v1, "com.autonavi.wh.extra.ADMIN_AREA_INFO"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
@@ -160,7 +160,7 @@
 
     if-ne p2, v0, :cond_0
 
-    const-string v0, "com.autonavi.xm.extra.ADMIN_AREA_INFO"
+    const-string v0, "com.autonavi.wh.extra.ADMIN_AREA_INFO"
 
     invoke-virtual {p3, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -253,7 +253,7 @@
 
     iput-boolean v1, p0, Lcom/autonavi/wh/navi/menu/fragment/AreaPicker;->mIsFromCarFService:Z
 
-    const-string v1, "com.autonavi.xm.extra.ADMIN_AREA_INFO"
+    const-string v1, "com.autonavi.wh.extra.ADMIN_AREA_INFO"
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -390,7 +390,7 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v2, "com.autonavi.xm.extra.ADMIN_AREA_INFO"
+    const-string v2, "com.autonavi.wh.extra.ADMIN_AREA_INFO"
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
@@ -428,7 +428,7 @@
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v2, "com.autonavi.xm.extra.ADMIN_AREA_INFO"
+    const-string v2, "com.autonavi.wh.extra.ADMIN_AREA_INFO"
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 

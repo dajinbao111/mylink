@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final EXTRA_IS_STATEMENT_ACCEPTED:Ljava/lang/String; = "com.autonavi.xm.extra.IS_STATEMENT_ACCEPTED"
+.field public static final EXTRA_IS_STATEMENT_ACCEPTED:Ljava/lang/String; = "com.autonavi.wh.extra.IS_STATEMENT_ACCEPTED"
 
 .field private static final KEY_SHOULD_ENTER_NAVI_AUTO:Ljava/lang/String; = "auto_enter_navi"
 
@@ -116,7 +116,7 @@
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    const-string v1, "com.autonavi.xm.extra.IS_STATEMENT_ACCEPTED"
+    const-string v1, "com.autonavi.wh.extra.IS_STATEMENT_ACCEPTED"
 
     const/4 v2, 0x1
 
@@ -213,7 +213,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v1, "com.autonavi.xm.action.QUIT_APPLICATION"
+    const-string v1, "com.autonavi.wh.action.QUIT_APPLICATION"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 

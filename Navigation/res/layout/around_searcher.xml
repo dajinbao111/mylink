@@ -12,5 +12,5 @@
             <TextView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/by_dest" android:drawableLeft="@drawable/ic_btn_around_dest" android:drawablePadding="5.0dip" style="@style/TextView.BtnDisable" />
         </RelativeLayout>
     </LinearLayout>
-    <com.autonavi.xm.navi.base.widget.CompoundCirListView android:id="@id/list_search_categories" android:paddingBottom="@dimen/gap_group" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.autonavi.wh.navi.base.widget.CompoundCirListView android:id="@id/list_search_categories" android:paddingBottom="@dimen/gap_group" android:layout_width="fill_parent" android:layout_height="fill_parent" />
 </LinearLayout>

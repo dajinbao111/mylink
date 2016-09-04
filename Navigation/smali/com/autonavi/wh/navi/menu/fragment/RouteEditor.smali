@@ -314,13 +314,13 @@
 
     new-instance v0, Landroid/content/Intent;
 
-    const-string v1, "com.autonavi.xm.action.BACK_TO_MY_LOCATION"
+    const-string v1, "com.autonavi.wh.action.BACK_TO_MY_LOCATION"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     iget-object v1, p0, Lcom/autonavi/wh/navi/menu/fragment/RouteEditor;->mHost:Lcom/autonavi/wh/navi/main/activity/NavigationMapActivity;
 
-    const-string v2, "com.autonavi.xm.meta.BACK_TO_MAP_COMPONENT"
+    const-string v2, "com.autonavi.wh.meta.BACK_TO_MAP_COMPONENT"
 
     invoke-static {v1, v2}, Lcom/autonavi/wh/navigation/NaviHelper;->getStringMeta(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
@@ -1032,7 +1032,7 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    const-string v1, "com.autonavi.xm.action.NAVIGATE"
+    const-string v1, "com.autonavi.wh.action.NAVIGATE"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
@@ -1126,7 +1126,7 @@
 
     if-ne p2, v0, :cond_0
 
-    const-string v0, "com.autonavi.xm.extra.POI"
+    const-string v0, "com.autonavi.wh.extra.POI"
 
     invoke-virtual {p3, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
