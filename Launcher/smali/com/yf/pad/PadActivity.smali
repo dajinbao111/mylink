@@ -1115,7 +1115,7 @@
     :pswitch_4
     new-instance v1, Landroid/content/Intent;
 
-    const-class v3, Lcom/yf/pad/WarnActivity;
+    const-class v3, Lcom/yf/pad/OtherActivity;
 
     invoke-direct {v1, p0, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
