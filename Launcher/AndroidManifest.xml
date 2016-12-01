@@ -27,7 +27,6 @@
         <activity android:icon="@null" android:name="com.yf.pad.ApplicationGridView" android:screenOrientation="nosensor" android:theme="@android:style/Theme.NoTitleBar"/>
         <activity android:icon="@null" android:name="com.yf.appinfo.AppInfoActivity" android:screenOrientation="nosensor"/>
         <activity android:icon="@null" android:name="com.yf.pad.DialogActivity" android:screenOrientation="nosensor" android:theme="@android:style/Theme.Dialog"/>
-        <activity android:icon="@null" android:name="com.yf.pad.WarnActivity" android:screenOrientation="nosensor" android:theme="@android:style/Theme.NoTitleBar"/>
         <receiver android:name="com.yf.bar.NavibarBroadCast">
             <intent-filter>
                 <action android:name="android.net.wifi.STATE_CHANGE"/>
@@ -37,7 +36,5 @@
                 <action android:name="android.intent.action.BATTERY_CHANGED"/>
             </intent-filter>
         </receiver>
-        <service android:name="com.umeng.common.net.DownloadingService" android:process=":DownloadingService"/>
-        <meta-data android:name="UMENG_APPKEY" android:value="536b8da556240b0a8101a14f"/>
     </application>
 </manifest>
