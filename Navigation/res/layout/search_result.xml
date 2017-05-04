@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.autonavi.wh.navi.base.widget.CompoundCirListView android:id="@id/list_pois" android:paddingLeft="@dimen/gap_group" android:paddingRight="@dimen/gap_group" android:paddingBottom="@dimen/gap_group" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/Widget.ListView"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

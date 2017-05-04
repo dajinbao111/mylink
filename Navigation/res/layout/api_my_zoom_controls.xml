@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ZoomButton android:id="@id/zoomInZB" android:background="@drawable/api_btn_map_zoomin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <View android:id="@id/zoomSpacingView" android:visibility="invisible" android:layout_width="1.0dip" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="1.0dip" />
-    <ZoomButton android:id="@id/zoomOutZB" android:background="@drawable/api_btn_map_zoomout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-</merge>

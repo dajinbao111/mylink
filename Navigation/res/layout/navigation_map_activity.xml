@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <ViewStub android:id="@id/stub_map_view" android:inflatedId="@id/map_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
-    <RelativeLayout android:gravity="center_horizontal" android:id="@id/opening_splash" android:background="@drawable/opening_splash" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <ImageView android:id="@id/opening_splash_progress" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="101.0dip" android:src="@drawable/opening_splash_progress" android:scaleType="centerInside" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
-    </RelativeLayout>
-</merge>

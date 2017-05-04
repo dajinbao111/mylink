@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <TextView android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/title_result_number" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:minEms="3" />
-    <ToggleButton android:id="@id/tbtn_sort" android:background="@drawable/btn_avoid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@null" android:textOn="@string/sort_by_match" android:textOff="@string/sort_by_distance" android:minEms="5" android:singleLine="true" android:drawableRight="@drawable/ic_item_separator" android:drawablePadding="10.0dip" />
-</LinearLayout>
